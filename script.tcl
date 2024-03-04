@@ -1,5 +1,5 @@
-# vivado -mode batch -source script2.tcl -tclargs 1
-# source script2.tcl
+# vivado -mode batch -source script.tcl -tclargs 1
+# source script.tcl
 
 set chosen 1
 
