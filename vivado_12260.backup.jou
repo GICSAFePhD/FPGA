@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Mon Mar  4 21:44:20 2024
+# Process ID: 12260
+# Current directory: C:/Users/menen/OneDrive/Documentos/GICSAFePhD/FPGA
+# Command line: vivado.exe -mode batch -source script2.tcl -tclargs 4
+# Log file: C:/Users/menen/OneDrive/Documentos/GICSAFePhD/FPGA/vivado.log
+# Journal file: C:/Users/menen/OneDrive/Documentos/GICSAFePhD/FPGA\vivado.jou
+# Running On: Kaltakar, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 24, Host memory: 68560 MB
+#-----------------------------------------------------------
+source script2.tcl

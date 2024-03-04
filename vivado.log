@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Mon Mar  4 21:44:58 2024
+# Process ID: 21916
+# Current directory: C:/Users/menen/OneDrive/Documentos/GICSAFePhD/FPGA
+# Command line: vivado.exe -mode batch -source script2.tcl -tclargs 4
+# Log file: C:/Users/menen/OneDrive/Documentos/GICSAFePhD/FPGA/vivado.log
+# Journal file: C:/Users/menen/OneDrive/Documentos/GICSAFePhD/FPGA\vivado.jou
+# Running On: Kaltakar, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 24, Host memory: 68560 MB
+#-----------------------------------------------------------
+source script2.tcl
+# set abc [lindex $argv 0]
+# puts $abc
+4
+# set chosen 4
+WARNING: [Vivado 12-818] No files matched '*'
+# set design_sources [get_files -of_objects [get_filesets sources_1]]
+# remove_files $design_sources
+# set base_folder_path "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_"
+# set folder_path "${base_folder_path}${chosen}/VHDL"
+# puts $folder_path
+C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_4/VHDL
+# set files [glob -directory $folder_path *.vhd]
+# add_files -norecurse -scan_for_includes  $files
+# update_compile_order -fileset sources_1
+# update_compile_order -fileset sources_1
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  4 21:45:05 2024...
