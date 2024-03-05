@@ -1,7 +1,8 @@
 # vivado -mode batch -source script.tcl -tclargs 1
+# cd C:/Users/menen/OneDrive/Documentos/GICSAFePhD/FPGA
 # source script.tcl
 
-set chosen 1
+set chosen 3
 
 # Get a list of all design source files
 set design_sources [get_files -of_objects [get_filesets sources_1]]

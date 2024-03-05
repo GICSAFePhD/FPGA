@@ -25,386 +25,711 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 24552
+INFO: [Synth 8-7075] Helper process launched with PID 21816
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 958.195 ; gain = 440.730
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 958.227 ; gain = 441.273
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'global' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/global.vhd:18]
-INFO: [Synth 8-638] synthesizing module 'uart' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uart.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'global' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/global.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'uart' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/uart.vhd:25]
 	Parameter DVSR bound to: 407 - type: integer 
 	Parameter DVSR_BIT bound to: 9 - type: integer 
-	Parameter FIFO_W_TX bound to: 7 - type: integer 
-	Parameter FIFO_W_RX bound to: 7 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'uart_baud_gen' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_baud_gen.vhd:16]
+	Parameter FIFO_W_TX bound to: 9 - type: integer 
+	Parameter FIFO_W_RX bound to: 9 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uart_baud_gen' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/uart_baud_gen.vhd:16]
 	Parameter N bound to: 9 - type: integer 
 	Parameter M bound to: 407 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'uart_baud_gen' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_baud_gen.vhd:16]
-INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_rx.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'uart_baud_gen' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/uart_baud_gen.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/uart_rx.vhd:18]
 	Parameter DBIT bound to: 8 - type: integer 
 	Parameter SB_TICK bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'uart_rx' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_rx.vhd:18]
-INFO: [Synth 8-638] synthesizing module 'fifo' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/fifo.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/uart_rx.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'fifo' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/fifo.vhd:18]
 	Parameter B bound to: 8 - type: integer 
-	Parameter W bound to: 7 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'fifo' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/fifo.vhd:18]
-INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_tx.vhd:19]
+	Parameter W bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/fifo.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/uart_tx.vhd:19]
 	Parameter DBIT bound to: 8 - type: integer 
 	Parameter SB_TICK bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'uart_tx' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_tx.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'uart' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uart.vhd:25]
-INFO: [Synth 8-3491] module 'uartControl' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uartControl.vhd:5' bound to instance 'uartControl_i' of component 'uartControl' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/global.vhd:74]
-INFO: [Synth 8-638] synthesizing module 'uartControl' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uartControl.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'uartControl' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uartControl.vhd:16]
-INFO: [Synth 8-3491] module 'system' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/system.vhd:5' bound to instance 'system_i' of component 'system' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/global.vhd:84]
-INFO: [Synth 8-638] synthesizing module 'system' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/system.vhd:23]
-INFO: [Synth 8-3491] module 'detector' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/detector.vhd:5' bound to instance 'detector_i' of component 'detector' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/system.vhd:81]
-INFO: [Synth 8-638] synthesizing module 'detector' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/detector.vhd:21]
-WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/detector.vhd:24]
-INFO: [Synth 8-226] default block is never used [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/detector.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'detector' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/detector.vhd:21]
-INFO: [Synth 8-3491] module 'interlocking' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/interlocking.vhd:7' bound to instance 'interlocking_i' of component 'interlocking' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/system.vhd:96]
-INFO: [Synth 8-638] synthesizing module 'interlocking' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/interlocking.vhd:24]
-INFO: [Synth 8-3491] module 'splitter' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:7' bound to instance 'splitter_i' of component 'splitter' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/interlocking.vhd:101]
-INFO: [Synth 8-638] synthesizing module 'splitter' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:29]
-	Parameter N bound to: 85 - type: integer 
-	Parameter N_SIGNALS bound to: 23 - type: integer 
-	Parameter N_LEVELCROSSINGS bound to: 2 - type: integer 
-	Parameter N_SINGLESWITCHES bound to: 5 - type: integer 
-	Parameter N_ROUTES bound to: 21 - type: integer 
-	Parameter N_TRACKCIRCUITS bound to: 11 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'splitter' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:29]
-INFO: [Synth 8-3491] module 'mediator' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:7' bound to instance 'mediator_i' of component 'mediator' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/interlocking.vhd:113]
-INFO: [Synth 8-638] synthesizing module 'mediator' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:28]
-	Parameter N bound to: 85 - type: integer 
-	Parameter N_SIGNALS bound to: 23 - type: integer 
-	Parameter N_ROUTES bound to: 21 - type: integer 
-	Parameter N_LEVELCROSSINGS bound to: 2 - type: integer 
-	Parameter N_SINGLESWITCHES bound to: 5 - type: integer 
-	Parameter N_TRACKCIRCUITS bound to: 11 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mediator' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:28]
-INFO: [Synth 8-3491] module 'network' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:7' bound to instance 'network_i' of component 'network' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/interlocking.vhd:124]
-INFO: [Synth 8-638] synthesizing module 'network' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:32]
-	Parameter N bound to: 85 - type: integer 
-	Parameter N_SIGNALS bound to: 23 - type: integer 
-	Parameter N_ROUTES bound to: 21 - type: integer 
-	Parameter N_LEVELCROSSINGS bound to: 2 - type: integer 
-	Parameter N_SINGLESWITCHES bound to: 5 - type: integer 
-	Parameter N_TRACKCIRCUITS bound to: 11 - type: integer 
-INFO: [Synth 8-3491] module 'levelCrossing_0' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:7' bound to instance 'levelCrossing_Lc08' of component 'levelCrossing_0' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:541]
-INFO: [Synth 8-638] synthesizing module 'levelCrossing_0' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'levelCrossing_0' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:19]
-INFO: [Synth 8-3491] module 'levelCrossing_1' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:7' bound to instance 'levelCrossing_Lc06' of component 'levelCrossing_1' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:542]
-INFO: [Synth 8-638] synthesizing module 'levelCrossing_1' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'levelCrossing_1' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:19]
-INFO: [Synth 8-3491] module 'singleSwitch_0' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:7' bound to instance 'singleSwitch_Sw04' of component 'singleSwitch_0' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:543]
-INFO: [Synth 8-638] synthesizing module 'singleSwitch_0' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'singleSwitch_0' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:21]
-INFO: [Synth 8-3491] module 'singleSwitch_1' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_1.vhd:7' bound to instance 'singleSwitch_Sw06' of component 'singleSwitch_1' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:544]
-INFO: [Synth 8-638] synthesizing module 'singleSwitch_1' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_1.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'singleSwitch_1' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_1.vhd:19]
-INFO: [Synth 8-3491] module 'singleSwitch_2' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_2.vhd:7' bound to instance 'singleSwitch_Sw12' of component 'singleSwitch_2' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:545]
-INFO: [Synth 8-638] synthesizing module 'singleSwitch_2' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_2.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'singleSwitch_2' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_2.vhd:19]
-INFO: [Synth 8-3491] module 'singleSwitch_3' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_3.vhd:7' bound to instance 'singleSwitch_Sw07' of component 'singleSwitch_3' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:546]
-INFO: [Synth 8-638] synthesizing module 'singleSwitch_3' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_3.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'singleSwitch_3' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_3.vhd:19]
-INFO: [Synth 8-3491] module 'singleSwitch_4' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_4.vhd:7' bound to instance 'singleSwitch_Sw13' of component 'singleSwitch_4' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:547]
-INFO: [Synth 8-638] synthesizing module 'singleSwitch_4' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_4.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'singleSwitch_4' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_4.vhd:19]
-INFO: [Synth 8-3491] module 'node_0' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_0.vhd:7' bound to instance 'node_ne1' of component 'node_0' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:548]
-INFO: [Synth 8-638] synthesizing module 'node_0' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_0.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'node_0' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_0.vhd:20]
-INFO: [Synth 8-3491] module 'node_1' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_1.vhd:7' bound to instance 'node_ne2' of component 'node_1' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:549]
-INFO: [Synth 8-638] synthesizing module 'node_1' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_1.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'node_1' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_1.vhd:18]
-INFO: [Synth 8-3491] module 'node_2' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_2.vhd:7' bound to instance 'node_ne8' of component 'node_2' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:550]
-INFO: [Synth 8-638] synthesizing module 'node_2' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_2.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'node_2' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_2.vhd:20]
-INFO: [Synth 8-3491] module 'node_3' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_3.vhd:7' bound to instance 'node_ne9' of component 'node_3' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:551]
-INFO: [Synth 8-638] synthesizing module 'node_3' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_3.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'node_3' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_3.vhd:18]
-INFO: [Synth 8-3491] module 'node_4' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_4.vhd:7' bound to instance 'node_ne12' of component 'node_4' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:552]
-INFO: [Synth 8-638] synthesizing module 'node_4' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_4.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'node_4' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_4.vhd:20]
-INFO: [Synth 8-3491] module 'node_5' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_5.vhd:7' bound to instance 'node_ne13' of component 'node_5' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:553]
-INFO: [Synth 8-638] synthesizing module 'node_5' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_5.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'node_5' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_5.vhd:17]
-INFO: [Synth 8-3491] module 'node_6' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_6.vhd:7' bound to instance 'node_ne14' of component 'node_6' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:554]
-INFO: [Synth 8-638] synthesizing module 'node_6' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_6.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'node_6' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_6.vhd:18]
-INFO: [Synth 8-3491] module 'node_7' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_7.vhd:7' bound to instance 'node_ne15' of component 'node_7' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:555]
-INFO: [Synth 8-638] synthesizing module 'node_7' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_7.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'node_7' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_7.vhd:17]
-INFO: [Synth 8-3491] module 'node_8' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_8.vhd:7' bound to instance 'node_ne22' of component 'node_8' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:556]
-INFO: [Synth 8-638] synthesizing module 'node_8' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_8.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'node_8' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_8.vhd:17]
-INFO: [Synth 8-3491] module 'node_9' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_9.vhd:7' bound to instance 'node_ne23' of component 'node_9' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:557]
-INFO: [Synth 8-638] synthesizing module 'node_9' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_9.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'node_9' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_9.vhd:16]
-INFO: [Synth 8-3491] module 'node_10' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_10.vhd:7' bound to instance 'node_ne24' of component 'node_10' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:558]
-INFO: [Synth 8-638] synthesizing module 'node_10' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_10.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'node_10' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_10.vhd:16]
-INFO: [Synth 8-3491] module 'route_0' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_0.vhd:7' bound to instance 'route_R1' of component 'route_0' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:559]
-INFO: [Synth 8-638] synthesizing module 'route_0' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_0.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'route_0' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_0.vhd:18]
-INFO: [Synth 8-3491] module 'route_1' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_1.vhd:7' bound to instance 'route_R2' of component 'route_1' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:560]
-INFO: [Synth 8-638] synthesizing module 'route_1' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_1.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'route_1' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_1.vhd:16]
-INFO: [Synth 8-3491] module 'route_2' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_2.vhd:7' bound to instance 'route_R3' of component 'route_2' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:561]
-INFO: [Synth 8-638] synthesizing module 'route_2' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_2.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'route_2' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_2.vhd:16]
-INFO: [Synth 8-3491] module 'route_3' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_3.vhd:7' bound to instance 'route_R4' of component 'route_3' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:562]
-INFO: [Synth 8-638] synthesizing module 'route_3' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_3.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'route_3' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_3.vhd:16]
-INFO: [Synth 8-3491] module 'route_4' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_4.vhd:7' bound to instance 'route_R5' of component 'route_4' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:563]
-INFO: [Synth 8-638] synthesizing module 'route_4' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_4.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'route_4' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_4.vhd:20]
-INFO: [Synth 8-3491] module 'route_5' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_5.vhd:7' bound to instance 'route_R6' of component 'route_5' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:564]
-INFO: [Synth 8-638] synthesizing module 'route_5' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_5.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'route_5' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_5.vhd:20]
-INFO: [Synth 8-3491] module 'route_6' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_6.vhd:7' bound to instance 'route_R7' of component 'route_6' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:565]
-INFO: [Synth 8-638] synthesizing module 'route_6' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_6.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'route_6' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_6.vhd:18]
-INFO: [Synth 8-3491] module 'route_7' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_7.vhd:7' bound to instance 'route_R8' of component 'route_7' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:566]
-INFO: [Synth 8-638] synthesizing module 'route_7' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_7.vhd:26]
-INFO: [Synth 8-256] done synthesizing module 'route_7' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_7.vhd:26]
-INFO: [Synth 8-3491] module 'route_8' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_8.vhd:7' bound to instance 'route_R9' of component 'route_8' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:567]
-INFO: [Synth 8-638] synthesizing module 'route_8' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_8.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'route_8' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_8.vhd:20]
-INFO: [Synth 8-3491] module 'route_9' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_9.vhd:7' bound to instance 'route_R10' of component 'route_9' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:568]
-INFO: [Synth 8-638] synthesizing module 'route_9' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_9.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'route_9' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_9.vhd:20]
-INFO: [Synth 8-3491] module 'route_10' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_10.vhd:7' bound to instance 'route_R11' of component 'route_10' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:569]
-INFO: [Synth 8-638] synthesizing module 'route_10' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_10.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'route_10' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_10.vhd:20]
-INFO: [Synth 8-3491] module 'route_11' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_11.vhd:7' bound to instance 'route_R12' of component 'route_11' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:570]
-INFO: [Synth 8-638] synthesizing module 'route_11' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_11.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'route_11' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_11.vhd:24]
-INFO: [Synth 8-3491] module 'route_12' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_12.vhd:7' bound to instance 'route_R13' of component 'route_12' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:571]
-INFO: [Synth 8-638] synthesizing module 'route_12' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_12.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'route_12' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_12.vhd:24]
-INFO: [Synth 8-3491] module 'route_13' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_13.vhd:7' bound to instance 'route_R14' of component 'route_13' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:572]
-INFO: [Synth 8-638] synthesizing module 'route_13' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_13.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'route_13' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_13.vhd:20]
-INFO: [Synth 8-3491] module 'route_14' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_14.vhd:7' bound to instance 'route_R15' of component 'route_14' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:573]
-INFO: [Synth 8-638] synthesizing module 'route_14' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_14.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'route_14' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_14.vhd:20]
-INFO: [Synth 8-3491] module 'route_15' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_15.vhd:7' bound to instance 'route_R16' of component 'route_15' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:574]
-INFO: [Synth 8-638] synthesizing module 'route_15' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_15.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'route_15' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_15.vhd:22]
-INFO: [Synth 8-3491] module 'route_16' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_16.vhd:7' bound to instance 'route_R17' of component 'route_16' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:575]
-INFO: [Synth 8-638] synthesizing module 'route_16' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_16.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'route_16' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_16.vhd:24]
-INFO: [Synth 8-3491] module 'route_17' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_17.vhd:7' bound to instance 'route_R18' of component 'route_17' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:576]
-INFO: [Synth 8-638] synthesizing module 'route_17' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_17.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'route_17' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_17.vhd:20]
-INFO: [Synth 8-3491] module 'route_18' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_18.vhd:7' bound to instance 'route_R19' of component 'route_18' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:577]
-INFO: [Synth 8-638] synthesizing module 'route_18' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_18.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'route_18' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_18.vhd:24]
-INFO: [Synth 8-3491] module 'route_19' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_19.vhd:7' bound to instance 'route_R20' of component 'route_19' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:578]
-INFO: [Synth 8-638] synthesizing module 'route_19' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_19.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'route_19' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_19.vhd:20]
-INFO: [Synth 8-3491] module 'route_20' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_20.vhd:7' bound to instance 'route_R21' of component 'route_20' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:579]
-INFO: [Synth 8-638] synthesizing module 'route_20' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_20.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'route_20' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_20.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'network' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'interlocking' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/interlocking.vhd:24]
-INFO: [Synth 8-3491] module 'printer' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/printer.vhd:5' bound to instance 'printer_i' of component 'printer' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/system.vhd:105]
-INFO: [Synth 8-638] synthesizing module 'printer' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/printer.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'printer' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/printer.vhd:16]
-INFO: [Synth 8-3491] module 'selector' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/selector.vhd:5' bound to instance 'selector_i' of component 'selector' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/system.vhd:115]
-INFO: [Synth 8-638] synthesizing module 'selector' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/selector.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'selector' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/selector.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'system' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/system.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'global' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/global.vhd:18]
-WARNING: [Synth 8-6014] Unused sequential element new_data_reg was removed.  [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/detector.vhd:75]
-WARNING: [Synth 8-3848] Net ne13_command in module/entity route_0 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_0.vhd:12]
-WARNING: [Synth 8-3848] Net Lc08_command in module/entity route_0 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_0.vhd:14]
-WARNING: [Synth 8-3848] Net ne14_command in module/entity route_1 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_1.vhd:12]
-WARNING: [Synth 8-3848] Net ne15_command in module/entity route_2 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_2.vhd:12]
-WARNING: [Synth 8-3848] Net ne22_command in module/entity route_3 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_3.vhd:12]
-WARNING: [Synth 8-3848] Net ne22_command in module/entity route_4 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_4.vhd:12]
-WARNING: [Synth 8-3848] Net ne8_command in module/entity route_4 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_4.vhd:14]
-WARNING: [Synth 8-3848] Net Sw12_command in module/entity route_4 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_4.vhd:16]
-WARNING: [Synth 8-3848] Net ne23_command in module/entity route_5 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_5.vhd:12]
-WARNING: [Synth 8-3848] Net ne12_command in module/entity route_5 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_5.vhd:14]
-WARNING: [Synth 8-3848] Net Sw13_command in module/entity route_5 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_5.vhd:16]
-WARNING: [Synth 8-3848] Net ne14_command in module/entity route_6 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_6.vhd:12]
-WARNING: [Synth 8-3848] Net Lc06_command in module/entity route_6 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_6.vhd:14]
-WARNING: [Synth 8-3848] Net ne14_command in module/entity route_7 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_7.vhd:12]
-WARNING: [Synth 8-3848] Net ne9_command in module/entity route_7 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_7.vhd:14]
-WARNING: [Synth 8-3848] Net ne1_command in module/entity route_7 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_7.vhd:16]
-WARNING: [Synth 8-3848] Net Lc06_command in module/entity route_7 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_7.vhd:18]
-WARNING: [Synth 8-3848] Net Sw04_command in module/entity route_7 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_7.vhd:20]
-WARNING: [Synth 8-3848] Net Sw07_command in module/entity route_7 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_7.vhd:22]
-WARNING: [Synth 8-3848] Net ne13_command in module/entity route_8 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_8.vhd:12]
-WARNING: [Synth 8-3848] Net ne2_command in module/entity route_8 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_8.vhd:14]
-WARNING: [Synth 8-3848] Net Sw06_command in module/entity route_8 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_8.vhd:16]
-WARNING: [Synth 8-3848] Net ne8_command in module/entity route_9 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_9.vhd:12]
-WARNING: [Synth 8-3848] Net ne1_command in module/entity route_9 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_9.vhd:14]
-WARNING: [Synth 8-3848] Net Sw04_command in module/entity route_9 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_9.vhd:16]
-WARNING: [Synth 8-3848] Net ne1_command in module/entity route_10 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_10.vhd:12]
-WARNING: [Synth 8-3848] Net ne8_command in module/entity route_10 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_10.vhd:14]
-WARNING: [Synth 8-3848] Net Sw04_command in module/entity route_10 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_10.vhd:16]
-WARNING: [Synth 8-3848] Net ne1_command in module/entity route_11 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_11.vhd:12]
-WARNING: [Synth 8-3848] Net ne9_command in module/entity route_11 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_11.vhd:14]
-WARNING: [Synth 8-3848] Net ne14_command in module/entity route_11 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_11.vhd:16]
-WARNING: [Synth 8-3848] Net Sw04_command in module/entity route_11 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_11.vhd:18]
-WARNING: [Synth 8-3848] Net Sw07_command in module/entity route_11 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_11.vhd:20]
-WARNING: [Synth 8-3848] Net ne1_command in module/entity route_12 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_12.vhd:12]
-WARNING: [Synth 8-3848] Net ne9_command in module/entity route_12 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_12.vhd:14]
-WARNING: [Synth 8-3848] Net ne15_command in module/entity route_12 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_12.vhd:16]
-WARNING: [Synth 8-3848] Net Sw04_command in module/entity route_12 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_12.vhd:18]
-WARNING: [Synth 8-3848] Net Sw07_command in module/entity route_12 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_12.vhd:20]
-WARNING: [Synth 8-3848] Net ne12_command in module/entity route_13 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_13.vhd:12]
-WARNING: [Synth 8-3848] Net ne2_command in module/entity route_13 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_13.vhd:14]
-WARNING: [Synth 8-3848] Net Sw06_command in module/entity route_13 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_13.vhd:16]
-WARNING: [Synth 8-3848] Net ne2_command in module/entity route_14 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_14.vhd:12]
-WARNING: [Synth 8-3848] Net ne12_command in module/entity route_14 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_14.vhd:14]
-WARNING: [Synth 8-3848] Net Sw06_command in module/entity route_14 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_14.vhd:16]
-WARNING: [Synth 8-3848] Net ne2_command in module/entity route_15 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_15.vhd:12]
-WARNING: [Synth 8-3848] Net ne13_command in module/entity route_15 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_15.vhd:14]
-WARNING: [Synth 8-3848] Net Lc08_command in module/entity route_15 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_15.vhd:16]
-WARNING: [Synth 8-3848] Net Sw06_command in module/entity route_15 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_15.vhd:18]
-WARNING: [Synth 8-3848] Net ne15_command in module/entity route_16 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_16.vhd:12]
-WARNING: [Synth 8-3848] Net ne9_command in module/entity route_16 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_16.vhd:14]
-WARNING: [Synth 8-3848] Net ne1_command in module/entity route_16 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_16.vhd:16]
-WARNING: [Synth 8-3848] Net Sw04_command in module/entity route_16 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_16.vhd:18]
-WARNING: [Synth 8-3848] Net Sw07_command in module/entity route_16 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_16.vhd:20]
-WARNING: [Synth 8-3848] Net ne8_command in module/entity route_17 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_17.vhd:12]
-WARNING: [Synth 8-3848] Net ne22_command in module/entity route_17 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_17.vhd:14]
-WARNING: [Synth 8-3848] Net Sw12_command in module/entity route_17 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_17.vhd:16]
-WARNING: [Synth 8-3848] Net ne8_command in module/entity route_18 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_18.vhd:12]
-WARNING: [Synth 8-3848] Net ne24_command in module/entity route_18 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_18.vhd:14]
-WARNING: [Synth 8-3848] Net ne12_command in module/entity route_18 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_18.vhd:16]
-WARNING: [Synth 8-3848] Net Sw12_command in module/entity route_18 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_18.vhd:18]
-WARNING: [Synth 8-3848] Net Sw13_command in module/entity route_18 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_18.vhd:20]
-WARNING: [Synth 8-3848] Net ne12_command in module/entity route_19 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_19.vhd:12]
-WARNING: [Synth 8-3848] Net ne23_command in module/entity route_19 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_19.vhd:14]
-WARNING: [Synth 8-3848] Net Sw13_command in module/entity route_19 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_19.vhd:16]
-WARNING: [Synth 8-3848] Net ne12_command in module/entity route_20 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_20.vhd:12]
-WARNING: [Synth 8-3848] Net ne24_command in module/entity route_20 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_20.vhd:14]
-WARNING: [Synth 8-3848] Net ne8_command in module/entity route_20 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_20.vhd:16]
-WARNING: [Synth 8-3848] Net Sw12_command in module/entity route_20 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_20.vhd:18]
-WARNING: [Synth 8-3848] Net Sw13_command in module/entity route_20 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_20.vhd:20]
-WARNING: [Synth 8-3848] Net processed in module/entity network does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:19]
-WARNING: [Synth 8-3848] Net signals_o[msb] in module/entity network does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:22]
-WARNING: [Synth 8-3848] Net signals_o[lsb] in module/entity network does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:22]
-WARNING: [Synth 8-3848] Net leds in module/entity selector does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/selector.vhd:9]
-WARNING: [Synth 8-3848] Net read in module/entity system does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/system.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/uart_tx.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'uart' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/uart.vhd:25]
+INFO: [Synth 8-3491] module 'uartControl' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/uartControl.vhd:5' bound to instance 'uartControl_i' of component 'uartControl' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/global.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'uartControl' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/uartControl.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'uartControl' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/uartControl.vhd:16]
+INFO: [Synth 8-3491] module 'system' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/system.vhd:5' bound to instance 'system_i' of component 'system' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/global.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'system' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/system.vhd:23]
+INFO: [Synth 8-3491] module 'detector' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/detector.vhd:5' bound to instance 'detector_i' of component 'detector' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/system.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'detector' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/detector.vhd:21]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/detector.vhd:24]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/detector.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'detector' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/detector.vhd:21]
+INFO: [Synth 8-3491] module 'interlocking' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/interlocking.vhd:7' bound to instance 'interlocking_i' of component 'interlocking' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/system.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'interlocking' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/interlocking.vhd:25]
+INFO: [Synth 8-3491] module 'splitter' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/splitter.vhd:7' bound to instance 'splitter_i' of component 'splitter' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/interlocking.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'splitter' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/splitter.vhd:31]
+	Parameter N bound to: 339 - type: integer 
+	Parameter N_SIGNALS bound to: 82 - type: integer 
+	Parameter N_LEVELCROSSINGS bound to: 1 - type: integer 
+	Parameter N_SINGLESWITCHES bound to: 14 - type: integer 
+	Parameter N_ROUTES bound to: 91 - type: integer 
+	Parameter N_TRACKCIRCUITS bound to: 53 - type: integer 
+WARNING: [Synth 8-3819] Generic 'n_doubleswitches' not present in instantiated entity will be ignored [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/interlocking.vhd:110]
+INFO: [Synth 8-256] done synthesizing module 'splitter' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/splitter.vhd:31]
+INFO: [Synth 8-3491] module 'mediator' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/mediator.vhd:7' bound to instance 'mediator_i' of component 'mediator' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/interlocking.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'mediator' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/mediator.vhd:30]
+	Parameter N bound to: 339 - type: integer 
+	Parameter N_SIGNALS bound to: 82 - type: integer 
+	Parameter N_ROUTES bound to: 91 - type: integer 
+	Parameter N_LEVELCROSSINGS bound to: 1 - type: integer 
+	Parameter N_SINGLESWITCHES bound to: 14 - type: integer 
+	Parameter N_DOUBLESWITCHES bound to: 8 - type: integer 
+	Parameter N_TRACKCIRCUITS bound to: 53 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mediator' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/mediator.vhd:30]
+INFO: [Synth 8-3491] module 'network' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:7' bound to instance 'network_i' of component 'network' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/interlocking.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'network' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:35]
+	Parameter N bound to: 339 - type: integer 
+	Parameter N_SIGNALS bound to: 82 - type: integer 
+	Parameter N_ROUTES bound to: 91 - type: integer 
+	Parameter N_LEVELCROSSINGS bound to: 1 - type: integer 
+	Parameter N_SINGLESWITCHES bound to: 14 - type: integer 
+	Parameter N_DOUBLEWITCHES bound to: 8 - type: integer 
+	Parameter N_TRACKCIRCUITS bound to: 53 - type: integer 
+INFO: [Synth 8-3491] module 'levelCrossing_0' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/levelCrossing_0.vhd:7' bound to instance 'levelCrossing_Lc01' of component 'levelCrossing_0' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2052]
+INFO: [Synth 8-638] synthesizing module 'levelCrossing_0' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/levelCrossing_0.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'levelCrossing_0' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/levelCrossing_0.vhd:20]
+INFO: [Synth 8-3491] module 'singleSwitch_0' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_0.vhd:7' bound to instance 'singleSwitch_68W02' of component 'singleSwitch_0' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2053]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_0' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_0.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_0' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_0.vhd:19]
+INFO: [Synth 8-3491] module 'singleSwitch_1' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_1.vhd:7' bound to instance 'singleSwitch_69W03' of component 'singleSwitch_1' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2054]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_1' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_1.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_1' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_1.vhd:19]
+INFO: [Synth 8-3491] module 'singleSwitch_2' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_2.vhd:7' bound to instance 'singleSwitch_69W04' of component 'singleSwitch_2' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2055]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_2' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_2.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_2' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_2.vhd:19]
+INFO: [Synth 8-3491] module 'singleSwitch_3' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_3.vhd:7' bound to instance 'singleSwitch_Sw06' of component 'singleSwitch_3' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2056]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_3' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_3.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_3' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_3.vhd:21]
+INFO: [Synth 8-3491] module 'singleSwitch_4' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_4.vhd:7' bound to instance 'singleSwitch_70W02' of component 'singleSwitch_4' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2057]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_4' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_4.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_4' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_4.vhd:19]
+INFO: [Synth 8-3491] module 'singleSwitch_5' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_5.vhd:7' bound to instance 'singleSwitch_70W01' of component 'singleSwitch_5' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2058]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_5' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_5.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_5' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_5.vhd:19]
+INFO: [Synth 8-3491] module 'singleSwitch_6' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_6.vhd:7' bound to instance 'singleSwitch_Sw09' of component 'singleSwitch_6' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2059]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_6' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_6.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_6' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_6.vhd:19]
+INFO: [Synth 8-3491] module 'singleSwitch_7' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_7.vhd:7' bound to instance 'singleSwitch_Sw08' of component 'singleSwitch_7' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2060]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_7' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_7.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_7' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_7.vhd:19]
+INFO: [Synth 8-3491] module 'singleSwitch_8' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_8.vhd:7' bound to instance 'singleSwitch_Sw12' of component 'singleSwitch_8' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2061]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_8' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_8.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_8' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_8.vhd:21]
+INFO: [Synth 8-3491] module 'singleSwitch_9' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_9.vhd:7' bound to instance 'singleSwitch_Sw04' of component 'singleSwitch_9' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2062]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_9' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_9.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_9' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_9.vhd:21]
+INFO: [Synth 8-3491] module 'singleSwitch_10' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_10.vhd:7' bound to instance 'singleSwitch_71W01' of component 'singleSwitch_10' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2063]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_10' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_10.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_10' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_10.vhd:18]
+INFO: [Synth 8-3491] module 'singleSwitch_11' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_11.vhd:7' bound to instance 'singleSwitch_71W02' of component 'singleSwitch_11' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2064]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_11' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_11.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_11' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_11.vhd:17]
+INFO: [Synth 8-3491] module 'singleSwitch_12' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_12.vhd:7' bound to instance 'singleSwitch_Sw11' of component 'singleSwitch_12' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2065]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_12' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_12.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_12' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_12.vhd:19]
+INFO: [Synth 8-3491] module 'singleSwitch_13' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_13.vhd:7' bound to instance 'singleSwitch_Sw13' of component 'singleSwitch_13' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2066]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_13' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_13.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_13' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_13.vhd:19]
+INFO: [Synth 8-3491] module 'singleSwitch_14' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_14.vhd:7' bound to instance 'singleSwitch_Sw41' of component 'singleSwitch_14' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2067]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_14' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_14.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_14' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_14.vhd:20]
+INFO: [Synth 8-3491] module 'node_0' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_0.vhd:7' bound to instance 'node_ne1' of component 'node_0' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2068]
+INFO: [Synth 8-638] synthesizing module 'node_0' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_0.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'node_0' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_0.vhd:17]
+INFO: [Synth 8-3491] module 'node_1' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_1.vhd:7' bound to instance 'node_ne4' of component 'node_1' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2069]
+INFO: [Synth 8-638] synthesizing module 'node_1' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_1.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'node_1' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_1.vhd:16]
+INFO: [Synth 8-3491] module 'node_2' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_2.vhd:7' bound to instance 'node_ne7' of component 'node_2' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2070]
+INFO: [Synth 8-638] synthesizing module 'node_2' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_2.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'node_2' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_2.vhd:17]
+INFO: [Synth 8-3491] module 'node_3' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_3.vhd:7' bound to instance 'node_ne9' of component 'node_3' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2071]
+INFO: [Synth 8-638] synthesizing module 'node_3' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_3.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'node_3' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_3.vhd:20]
+INFO: [Synth 8-3491] module 'node_4' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_4.vhd:7' bound to instance 'node_ne11' of component 'node_4' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2072]
+INFO: [Synth 8-638] synthesizing module 'node_4' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_4.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'node_4' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_4.vhd:16]
+INFO: [Synth 8-3491] module 'node_5' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_5.vhd:7' bound to instance 'node_ne14' of component 'node_5' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2073]
+INFO: [Synth 8-638] synthesizing module 'node_5' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_5.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'node_5' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_5.vhd:16]
+INFO: [Synth 8-3491] module 'node_6' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_6.vhd:7' bound to instance 'node_ne17' of component 'node_6' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2074]
+INFO: [Synth 8-638] synthesizing module 'node_6' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_6.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'node_6' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_6.vhd:18]
+INFO: [Synth 8-3491] module 'node_7' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_7.vhd:7' bound to instance 'node_ne23' of component 'node_7' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2075]
+INFO: [Synth 8-638] synthesizing module 'node_7' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_7.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'node_7' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_7.vhd:19]
+INFO: [Synth 8-3491] module 'node_8' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_8.vhd:7' bound to instance 'node_ne24' of component 'node_8' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2076]
+INFO: [Synth 8-638] synthesizing module 'node_8' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_8.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'node_8' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_8.vhd:17]
+INFO: [Synth 8-3491] module 'node_9' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_9.vhd:7' bound to instance 'node_ne26' of component 'node_9' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2077]
+INFO: [Synth 8-638] synthesizing module 'node_9' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_9.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'node_9' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_9.vhd:20]
+INFO: [Synth 8-3491] module 'node_10' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_10.vhd:7' bound to instance 'node_ne29' of component 'node_10' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2078]
+INFO: [Synth 8-638] synthesizing module 'node_10' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_10.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'node_10' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_10.vhd:18]
+INFO: [Synth 8-3491] module 'node_11' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_11.vhd:7' bound to instance 'node_ne30' of component 'node_11' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2079]
+INFO: [Synth 8-638] synthesizing module 'node_11' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_11.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'node_11' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_11.vhd:24]
+INFO: [Synth 8-3491] module 'node_12' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_12.vhd:7' bound to instance 'node_ne32' of component 'node_12' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2080]
+INFO: [Synth 8-638] synthesizing module 'node_12' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_12.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'node_12' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_12.vhd:22]
+INFO: [Synth 8-3491] module 'node_13' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_13.vhd:7' bound to instance 'node_ne41' of component 'node_13' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2081]
+INFO: [Synth 8-638] synthesizing module 'node_13' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_13.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'node_13' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_13.vhd:18]
+INFO: [Synth 8-3491] module 'node_14' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_14.vhd:7' bound to instance 'node_ne43' of component 'node_14' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2082]
+INFO: [Synth 8-638] synthesizing module 'node_14' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_14.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'node_14' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_14.vhd:15]
+INFO: [Synth 8-3491] module 'node_15' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_15.vhd:7' bound to instance 'node_ne44' of component 'node_15' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2083]
+INFO: [Synth 8-638] synthesizing module 'node_15' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_15.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'node_15' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_15.vhd:21]
+INFO: [Synth 8-3491] module 'node_16' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_16.vhd:7' bound to instance 'node_ne47' of component 'node_16' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2084]
+INFO: [Synth 8-638] synthesizing module 'node_16' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_16.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'node_16' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_16.vhd:15]
+INFO: [Synth 8-3491] module 'node_17' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_17.vhd:7' bound to instance 'node_ne48' of component 'node_17' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2085]
+INFO: [Synth 8-638] synthesizing module 'node_17' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_17.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'node_17' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_17.vhd:16]
+INFO: [Synth 8-3491] module 'node_18' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_18.vhd:7' bound to instance 'node_ne59' of component 'node_18' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2086]
+INFO: [Synth 8-638] synthesizing module 'node_18' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_18.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'node_18' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_18.vhd:19]
+INFO: [Synth 8-3491] module 'node_19' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_19.vhd:7' bound to instance 'node_ne64' of component 'node_19' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2087]
+INFO: [Synth 8-638] synthesizing module 'node_19' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_19.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'node_19' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_19.vhd:19]
+INFO: [Synth 8-3491] module 'node_20' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_20.vhd:7' bound to instance 'node_ne65' of component 'node_20' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2088]
+INFO: [Synth 8-638] synthesizing module 'node_20' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_20.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'node_20' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_20.vhd:17]
+INFO: [Synth 8-3491] module 'node_21' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_21.vhd:7' bound to instance 'node_ne67' of component 'node_21' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2089]
+INFO: [Synth 8-638] synthesizing module 'node_21' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_21.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'node_21' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_21.vhd:16]
+INFO: [Synth 8-3491] module 'node_22' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_22.vhd:7' bound to instance 'node_ne70' of component 'node_22' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2090]
+INFO: [Synth 8-638] synthesizing module 'node_22' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_22.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'node_22' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_22.vhd:17]
+INFO: [Synth 8-3491] module 'node_23' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_23.vhd:7' bound to instance 'node_ne78' of component 'node_23' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2091]
+INFO: [Synth 8-638] synthesizing module 'node_23' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_23.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'node_23' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_23.vhd:22]
+INFO: [Synth 8-3491] module 'node_24' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_24.vhd:7' bound to instance 'node_ne79' of component 'node_24' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2092]
+INFO: [Synth 8-638] synthesizing module 'node_24' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_24.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'node_24' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_24.vhd:18]
+INFO: [Synth 8-3491] module 'node_25' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_25.vhd:7' bound to instance 'node_ne82' of component 'node_25' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2093]
+INFO: [Synth 8-638] synthesizing module 'node_25' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_25.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'node_25' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_25.vhd:18]
+INFO: [Synth 8-3491] module 'node_26' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_26.vhd:7' bound to instance 'node_ne83' of component 'node_26' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2094]
+INFO: [Synth 8-638] synthesizing module 'node_26' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_26.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'node_26' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_26.vhd:18]
+INFO: [Synth 8-3491] module 'node_27' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_27.vhd:7' bound to instance 'node_ne84' of component 'node_27' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2095]
+INFO: [Synth 8-638] synthesizing module 'node_27' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_27.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'node_27' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_27.vhd:18]
+INFO: [Synth 8-3491] module 'node_28' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_28.vhd:7' bound to instance 'node_ne86' of component 'node_28' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2096]
+INFO: [Synth 8-638] synthesizing module 'node_28' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_28.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'node_28' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_28.vhd:18]
+INFO: [Synth 8-3491] module 'node_29' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_29.vhd:7' bound to instance 'node_ne87' of component 'node_29' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2097]
+INFO: [Synth 8-638] synthesizing module 'node_29' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_29.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'node_29' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_29.vhd:16]
+INFO: [Synth 8-3491] module 'node_30' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_30.vhd:7' bound to instance 'node_ne88' of component 'node_30' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2098]
+INFO: [Synth 8-638] synthesizing module 'node_30' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_30.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'node_30' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_30.vhd:16]
+INFO: [Synth 8-3491] module 'node_31' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_31.vhd:7' bound to instance 'node_ne89' of component 'node_31' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2099]
+INFO: [Synth 8-638] synthesizing module 'node_31' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_31.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'node_31' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_31.vhd:16]
+INFO: [Synth 8-3491] module 'node_32' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_32.vhd:7' bound to instance 'node_ne90' of component 'node_32' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2100]
+INFO: [Synth 8-638] synthesizing module 'node_32' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_32.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'node_32' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_32.vhd:16]
+INFO: [Synth 8-3491] module 'node_33' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_33.vhd:7' bound to instance 'node_ne91' of component 'node_33' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2101]
+INFO: [Synth 8-638] synthesizing module 'node_33' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_33.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'node_33' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_33.vhd:18]
+INFO: [Synth 8-3491] module 'node_34' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_34.vhd:7' bound to instance 'node_ne93' of component 'node_34' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2102]
+INFO: [Synth 8-638] synthesizing module 'node_34' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_34.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'node_34' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_34.vhd:17]
+INFO: [Synth 8-3491] module 'node_35' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_35.vhd:7' bound to instance 'node_ne94' of component 'node_35' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2103]
+INFO: [Synth 8-638] synthesizing module 'node_35' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_35.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'node_35' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_35.vhd:19]
+INFO: [Synth 8-3491] module 'node_36' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_36.vhd:7' bound to instance 'node_ne95' of component 'node_36' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2104]
+INFO: [Synth 8-638] synthesizing module 'node_36' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_36.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'node_36' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_36.vhd:20]
+INFO: [Synth 8-3491] module 'node_37' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_37.vhd:7' bound to instance 'node_ne96' of component 'node_37' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2105]
+INFO: [Synth 8-638] synthesizing module 'node_37' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_37.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'node_37' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_37.vhd:18]
+INFO: [Synth 8-3491] module 'node_38' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_38.vhd:7' bound to instance 'node_ne97' of component 'node_38' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2106]
+INFO: [Synth 8-638] synthesizing module 'node_38' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_38.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'node_38' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_38.vhd:18]
+INFO: [Synth 8-3491] module 'node_39' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_39.vhd:7' bound to instance 'node_ne98' of component 'node_39' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2107]
+INFO: [Synth 8-638] synthesizing module 'node_39' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_39.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'node_39' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_39.vhd:17]
+INFO: [Synth 8-3491] module 'node_40' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_40.vhd:7' bound to instance 'node_ne99' of component 'node_40' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2108]
+INFO: [Synth 8-638] synthesizing module 'node_40' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_40.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'node_40' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_40.vhd:19]
+INFO: [Synth 8-3491] module 'node_41' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_41.vhd:7' bound to instance 'node_ne100' of component 'node_41' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'node_41' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_41.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'node_41' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_41.vhd:20]
+INFO: [Synth 8-3491] module 'node_42' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_42.vhd:7' bound to instance 'node_ne101' of component 'node_42' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2110]
+INFO: [Synth 8-638] synthesizing module 'node_42' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_42.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'node_42' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_42.vhd:19]
+INFO: [Synth 8-3491] module 'node_43' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_43.vhd:7' bound to instance 'node_ne102' of component 'node_43' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2111]
+INFO: [Synth 8-638] synthesizing module 'node_43' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_43.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'node_43' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_43.vhd:17]
+INFO: [Synth 8-3491] module 'node_44' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_44.vhd:7' bound to instance 'node_ne103' of component 'node_44' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2112]
+INFO: [Synth 8-638] synthesizing module 'node_44' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_44.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'node_44' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_44.vhd:18]
+INFO: [Synth 8-3491] module 'node_45' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_45.vhd:7' bound to instance 'node_ne105' of component 'node_45' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2113]
+INFO: [Synth 8-638] synthesizing module 'node_45' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_45.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'node_45' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_45.vhd:16]
+INFO: [Synth 8-3491] module 'node_46' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_46.vhd:7' bound to instance 'node_ne106' of component 'node_46' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2114]
+INFO: [Synth 8-638] synthesizing module 'node_46' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_46.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'node_46' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_46.vhd:17]
+INFO: [Synth 8-3491] module 'node_47' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_47.vhd:7' bound to instance 'node_ne85' of component 'node_47' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2115]
+INFO: [Synth 8-638] synthesizing module 'node_47' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_47.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'node_47' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_47.vhd:19]
+INFO: [Synth 8-3491] module 'node_48' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_48.vhd:7' bound to instance 'node_ne77' of component 'node_48' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2116]
+INFO: [Synth 8-638] synthesizing module 'node_48' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_48.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'node_48' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_48.vhd:20]
+INFO: [Synth 8-3491] module 'node_49' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_49.vhd:7' bound to instance 'node_ne104' of component 'node_49' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2117]
+INFO: [Synth 8-638] synthesizing module 'node_49' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_49.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'node_49' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_49.vhd:17]
+INFO: [Synth 8-3491] module 'node_50' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_50.vhd:7' bound to instance 'node_ne52' of component 'node_50' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2118]
+INFO: [Synth 8-638] synthesizing module 'node_50' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_50.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'node_50' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_50.vhd:20]
+INFO: [Synth 8-3491] module 'node_51' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_51.vhd:7' bound to instance 'node_ne21' of component 'node_51' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2119]
+INFO: [Synth 8-638] synthesizing module 'node_51' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_51.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'node_51' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_51.vhd:21]
+INFO: [Synth 8-3491] module 'node_52' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_52.vhd:7' bound to instance 'node_ne110' of component 'node_52' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2120]
+INFO: [Synth 8-638] synthesizing module 'node_52' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_52.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'node_52' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_52.vhd:20]
+INFO: [Synth 8-3491] module 'route_0' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_0.vhd:7' bound to instance 'route_R1' of component 'route_0' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2121]
+INFO: [Synth 8-638] synthesizing module 'route_0' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_0.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'route_0' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_0.vhd:16]
+INFO: [Synth 8-3491] module 'route_1' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_1.vhd:7' bound to instance 'route_R2' of component 'route_1' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2122]
+INFO: [Synth 8-638] synthesizing module 'route_1' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_1.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'route_1' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_1.vhd:16]
+INFO: [Synth 8-3491] module 'route_2' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_2.vhd:7' bound to instance 'route_R3' of component 'route_2' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2123]
+INFO: [Synth 8-638] synthesizing module 'route_2' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_2.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_2' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_2.vhd:20]
+INFO: [Synth 8-3491] module 'route_3' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_3.vhd:7' bound to instance 'route_R4' of component 'route_3' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2124]
+INFO: [Synth 8-638] synthesizing module 'route_3' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_3.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_3' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_3.vhd:20]
+INFO: [Synth 8-3491] module 'route_4' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_4.vhd:7' bound to instance 'route_R5' of component 'route_4' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2125]
+INFO: [Synth 8-638] synthesizing module 'route_4' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_4.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'route_4' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_4.vhd:22]
+INFO: [Synth 8-3491] module 'route_5' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_5.vhd:7' bound to instance 'route_R6' of component 'route_5' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2126]
+INFO: [Synth 8-638] synthesizing module 'route_5' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_5.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'route_5' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_5.vhd:26]
+INFO: [Synth 8-3491] module 'route_6' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_6.vhd:7' bound to instance 'route_R7' of component 'route_6' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2127]
+INFO: [Synth 8-638] synthesizing module 'route_6' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_6.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_6' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_6.vhd:20]
+INFO: [Synth 8-3491] module 'route_7' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_7.vhd:7' bound to instance 'route_R8' of component 'route_7' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2128]
+INFO: [Synth 8-638] synthesizing module 'route_7' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_7.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'route_7' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_7.vhd:24]
+INFO: [Synth 8-3491] module 'route_8' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_8.vhd:7' bound to instance 'route_R9' of component 'route_8' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2129]
+INFO: [Synth 8-638] synthesizing module 'route_8' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_8.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_8' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_8.vhd:20]
+INFO: [Synth 8-3491] module 'route_9' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_9.vhd:7' bound to instance 'route_R10' of component 'route_9' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2130]
+INFO: [Synth 8-638] synthesizing module 'route_9' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_9.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_9' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_9.vhd:18]
+INFO: [Synth 8-3491] module 'route_10' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_10.vhd:7' bound to instance 'route_R11' of component 'route_10' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2131]
+INFO: [Synth 8-638] synthesizing module 'route_10' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_10.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_10' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_10.vhd:18]
+INFO: [Synth 8-3491] module 'route_11' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_11.vhd:7' bound to instance 'route_R12' of component 'route_11' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2132]
+INFO: [Synth 8-638] synthesizing module 'route_11' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_11.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_11' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_11.vhd:18]
+INFO: [Synth 8-3491] module 'route_12' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_12.vhd:7' bound to instance 'route_R13' of component 'route_12' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2133]
+INFO: [Synth 8-638] synthesizing module 'route_12' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_12.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_12' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_12.vhd:18]
+INFO: [Synth 8-3491] module 'route_13' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_13.vhd:7' bound to instance 'route_R14' of component 'route_13' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2134]
+INFO: [Synth 8-638] synthesizing module 'route_13' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_13.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'route_13' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_13.vhd:22]
+INFO: [Synth 8-3491] module 'route_14' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_14.vhd:7' bound to instance 'route_R15' of component 'route_14' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2135]
+INFO: [Synth 8-638] synthesizing module 'route_14' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_14.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_14' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_14.vhd:18]
+INFO: [Synth 8-3491] module 'route_15' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_15.vhd:7' bound to instance 'route_R16' of component 'route_15' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2136]
+INFO: [Synth 8-638] synthesizing module 'route_15' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_15.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_15' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_15.vhd:18]
+INFO: [Synth 8-3491] module 'route_16' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_16.vhd:7' bound to instance 'route_R17' of component 'route_16' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2137]
+INFO: [Synth 8-638] synthesizing module 'route_16' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_16.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'route_16' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_16.vhd:16]
+INFO: [Synth 8-3491] module 'route_17' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_17.vhd:7' bound to instance 'route_R18' of component 'route_17' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2138]
+INFO: [Synth 8-638] synthesizing module 'route_17' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_17.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_17' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_17.vhd:18]
+INFO: [Synth 8-3491] module 'route_18' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_18.vhd:7' bound to instance 'route_R19' of component 'route_18' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2139]
+INFO: [Synth 8-638] synthesizing module 'route_18' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_18.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_18' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_18.vhd:18]
+INFO: [Synth 8-3491] module 'route_19' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_19.vhd:7' bound to instance 'route_R20' of component 'route_19' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2140]
+INFO: [Synth 8-638] synthesizing module 'route_19' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_19.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_19' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_19.vhd:18]
+INFO: [Synth 8-3491] module 'route_20' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_20.vhd:7' bound to instance 'route_R21' of component 'route_20' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2141]
+INFO: [Synth 8-638] synthesizing module 'route_20' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_20.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_20' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_20.vhd:18]
+INFO: [Synth 8-3491] module 'route_21' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_21.vhd:7' bound to instance 'route_R22' of component 'route_21' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2142]
+INFO: [Synth 8-638] synthesizing module 'route_21' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_21.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_21' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_21.vhd:18]
+INFO: [Synth 8-3491] module 'route_22' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_22.vhd:7' bound to instance 'route_R23' of component 'route_22' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2143]
+INFO: [Synth 8-638] synthesizing module 'route_22' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_22.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_22' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_22.vhd:20]
+INFO: [Synth 8-3491] module 'route_23' declared at 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_23.vhd:7' bound to instance 'route_R24' of component 'route_23' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:2144]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'route_23' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_23.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_23' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_23.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'route_24' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_24.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_24' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_24.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_25' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_25.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_25' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_25.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_26' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_26.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_26' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_26.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_27' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_27.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'route_27' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_27.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'route_28' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_28.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_28' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_28.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'route_29' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_29.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_29' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_29.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'route_30' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_30.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_30' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_30.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'route_31' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_31.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_31' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_31.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_32' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_32.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_32' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_32.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_33' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_33.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_33' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_33.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'route_34' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_34.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'route_34' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_34.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'route_35' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_35.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'route_35' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_35.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'route_36' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_36.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'route_36' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_36.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'route_37' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_37.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_37' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_37.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_38' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_38.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_38' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_38.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_39' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_39.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_39' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_39.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_40' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_40.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'route_40' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_40.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'route_41' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_41.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'route_41' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_41.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'route_42' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_42.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_42' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_42.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_43' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_43.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'route_43' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_43.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'route_44' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_44.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_44' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_44.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_45' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_45.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'route_45' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_45.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'route_46' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_46.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_46' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_46.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_47' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_47.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'route_47' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_47.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'route_48' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_48.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'route_48' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_48.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'route_49' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_49.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_49' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_49.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_50' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_50.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_50' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_50.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_51' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_51.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_51' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_51.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_52' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_52.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_52' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_52.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_53' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_53.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'route_53' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_53.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'route_54' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_54.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_54' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_54.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_55' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_55.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_55' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_55.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_56' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_56.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'route_56' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_56.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'route_57' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_57.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_57' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_57.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_58' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_58.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_58' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_58.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_59' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_59.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_59' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_59.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_60' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_60.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'route_60' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_60.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'route_61' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_61.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'route_61' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_61.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'route_62' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_62.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_62' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_62.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_63' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_63.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_63' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_63.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_64' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_64.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'route_64' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_64.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'route_65' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_65.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'route_65' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_65.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'route_66' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_66.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_66' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_66.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_67' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_67.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_67' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_67.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_68' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_68.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'route_68' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_68.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'route_69' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_69.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'route_69' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_69.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'route_70' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_70.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_70' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_70.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_71' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_71.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_71' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_71.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_72' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_72.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'route_72' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_72.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'route_73' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_73.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_73' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_73.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_74' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_74.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'route_74' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_74.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'route_75' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_75.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'route_75' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_75.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'route_76' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_76.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'route_76' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_76.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'route_77' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_77.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'route_77' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_77.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'route_78' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_78.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_78' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_78.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'route_79' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_79.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_79' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_79.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'route_80' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_80.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_80' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_80.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'route_81' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_81.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_81' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_81.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'route_82' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_82.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_82' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_82.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'route_83' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_83.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'route_83' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_83.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'route_84' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_84.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_84' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_84.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_85' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_85.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'route_85' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_85.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'route_86' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_86.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_86' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_86.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'route_87' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_87.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_87' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_87.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'route_88' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_88.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'route_88' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_88.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'route_89' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_89.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'route_89' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_89.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'route_90' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_90.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'route_90' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_90.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'network' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'interlocking' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/interlocking.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'printer' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/printer.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'printer' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/printer.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'selector' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/selector.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'selector' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/selector.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'system' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/system.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'global' (0#1) [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/global.vhd:18]
+WARNING: [Synth 8-6014] Unused sequential element new_data_reg was removed.  [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/detector.vhd:75]
+WARNING: [Synth 8-3848] Net ne1_command in module/entity route_0 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_0.vhd:12]
+WARNING: [Synth 8-3848] Net ne7_command in module/entity route_1 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_1.vhd:12]
+WARNING: [Synth 8-3848] Net ne14_command in module/entity route_2 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_2.vhd:12]
+WARNING: [Synth 8-3848] Net ne52_command in module/entity route_2 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_2.vhd:14]
+WARNING: [Synth 8-3848] Net s69W04_command in module/entity route_2 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_2.vhd:16]
+WARNING: [Synth 8-3848] Net ne47_command in module/entity route_3 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_3.vhd:12]
+WARNING: [Synth 8-3848] Net ne48_command in module/entity route_3 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_3.vhd:14]
+WARNING: [Synth 8-3848] Net s71W02_command in module/entity route_3 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_3.vhd:16]
+WARNING: [Synth 8-3848] Net ne84_command in module/entity route_4 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_4.vhd:12]
+WARNING: [Synth 8-3848] Net ne82_command in module/entity route_4 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_4.vhd:14]
+WARNING: [Synth 8-3848] Net ne32_command in module/entity route_4 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_4.vhd:16]
+WARNING: [Synth 8-3848] Net Sw04_command in module/entity route_4 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_4.vhd:18]
+WARNING: [Synth 8-3848] Net ne84_command in module/entity route_5 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_5.vhd:12]
+WARNING: [Synth 8-3848] Net ne85_command in module/entity route_5 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_5.vhd:14]
+WARNING: [Synth 8-3848] Net ne100_command in module/entity route_5 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_5.vhd:16]
+WARNING: [Synth 8-3848] Net ne101_command in module/entity route_5 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_5.vhd:18]
+WARNING: [Synth 8-3848] Net ne44_command in module/entity route_5 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_5.vhd:20]
+WARNING: [Synth 8-3848] Net Sw41_command in module/entity route_5 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_5.vhd:22]
+WARNING: [Synth 8-3848] Net ne89_command in module/entity route_6 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_6.vhd:12]
+WARNING: [Synth 8-3848] Net ne30_command in module/entity route_6 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_6.vhd:14]
+WARNING: [Synth 8-3848] Net Sw12_command in module/entity route_6 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_6.vhd:16]
+WARNING: [Synth 8-3848] Net ne90_command in module/entity route_7 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_7.vhd:12]
+WARNING: [Synth 8-3848] Net ne91_command in module/entity route_7 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_7.vhd:14]
+WARNING: [Synth 8-3848] Net ne30_command in module/entity route_7 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_7.vhd:16]
+WARNING: [Synth 8-3848] Net Sw12_command in module/entity route_7 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_7.vhd:18]
+WARNING: [Synth 8-3848] Net Sw13_command in module/entity route_7 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_7.vhd:20]
+WARNING: [Synth 8-3848] Net ne105_command in module/entity route_8 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_8.vhd:12]
+WARNING: [Synth 8-3848] Net ne98_command in module/entity route_8 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_8.vhd:14]
+WARNING: [Synth 8-3848] Net ne96_command in module/entity route_8 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_8.vhd:16]
+WARNING: [Synth 8-3848] Net ne4_command in module/entity route_9 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_9.vhd:12]
+WARNING: [Synth 8-3848] Net ne106_command in module/entity route_9 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_9.vhd:14]
+WARNING: [Synth 8-3848] Net ne26_command in module/entity route_10 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_10.vhd:12]
+WARNING: [Synth 8-3848] Net ne65_command in module/entity route_10 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_10.vhd:14]
+WARNING: [Synth 8-3848] Net ne44_command in module/entity route_11 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_11.vhd:12]
+WARNING: [Synth 8-3848] Net ne101_command in module/entity route_11 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_11.vhd:14]
+WARNING: [Synth 8-3848] Net ne65_command in module/entity route_12 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_12.vhd:12]
+WARNING: [Synth 8-3848] Net ne102_command in module/entity route_12 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_12.vhd:14]
+WARNING: [Synth 8-3848] Net ne70_command in module/entity route_13 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_13.vhd:12]
+WARNING: [Synth 8-3848] Net ne104_command in module/entity route_13 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_13.vhd:14]
+WARNING: [Synth 8-3848] Net ne21_command in module/entity route_13 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_13.vhd:16]
+WARNING: [Synth 8-3848] Net Sw03_command in module/entity route_13 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_13.vhd:18]
+WARNING: [Synth 8-3848] Net ne78_command in module/entity route_14 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_14.vhd:12]
+WARNING: [Synth 8-3848] Net ne93_command in module/entity route_14 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_14.vhd:14]
+WARNING: [Synth 8-3848] Net ne93_command in module/entity route_15 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_15.vhd:12]
+WARNING: [Synth 8-3848] Net ne96_command in module/entity route_15 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_15.vhd:14]
+WARNING: [Synth 8-3848] Net ne95_command in module/entity route_16 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_16.vhd:12]
+WARNING: [Synth 8-3848] Net ne97_command in module/entity route_17 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_17.vhd:12]
+WARNING: [Synth 8-3848] Net ne94_command in module/entity route_17 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_17.vhd:14]
+WARNING: [Synth 8-3848] Net ne98_command in module/entity route_18 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_18.vhd:12]
+WARNING: [Synth 8-3848] Net ne105_command in module/entity route_18 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_18.vhd:14]
+WARNING: [Synth 8-3848] Net ne101_command in module/entity route_19 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_19.vhd:12]
+WARNING: [Synth 8-3848] Net ne100_command in module/entity route_19 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_19.vhd:14]
+WARNING: [Synth 8-3848] Net ne103_command in module/entity route_20 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_20.vhd:12]
+WARNING: [Synth 8-3848] Net ne64_command in module/entity route_20 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_20.vhd:14]
+WARNING: [Synth 8-3848] Net ne106_command in module/entity route_21 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_21.vhd:12]
+WARNING: [Synth 8-3848] Net ne99_command in module/entity route_21 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_21.vhd:14]
+WARNING: [Synth 8-3848] Net ne7_command in module/entity route_22 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_22.vhd:12]
+WARNING: [Synth 8-3848] Net ne9_command in module/entity route_22 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_22.vhd:14]
+WARNING: [Synth 8-3848] Net s68W02_command in module/entity route_22 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_22.vhd:16]
+WARNING: [Synth 8-3848] Net ne9_command in module/entity route_23 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_23.vhd:12]
+WARNING: [Synth 8-3848] Net ne95_command in module/entity route_23 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_23.vhd:14]
+WARNING: [Synth 8-3848] Net ne95_command in module/entity route_24 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_24.vhd:12]
+WARNING: [Synth 8-3848] Net ne59_command in module/entity route_24 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_24.vhd:14]
+WARNING: [Synth 8-3848] Net Lc01_command in module/entity route_24 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_24.vhd:16]
+WARNING: [Synth 8-3848] Net ne95_command in module/entity route_25 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_25.vhd:12]
+WARNING: [Synth 8-3848] Net ne9_command in module/entity route_25 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_25.vhd:14]
+WARNING: [Synth 8-3848] Net Lc01_command in module/entity route_25 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_25.vhd:16]
+WARNING: [Synth 8-3848] Net ne23_command in module/entity route_26 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_26.vhd:12]
+WARNING: [Synth 8-3848] Net ne26_command in module/entity route_26 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_26.vhd:14]
+WARNING: [Synth 8-3848] Net s70W02_command in module/entity route_26 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_26.vhd:16]
+WARNING: [Synth 8-3848] Net ne24_command in module/entity route_27 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_27.vhd:12]
+WARNING: [Synth 8-3848] Net ne64_command in module/entity route_27 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_27.vhd:14]
+WARNING: [Synth 8-3848] Net ne103_command in module/entity route_27 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_27.vhd:16]
+WARNING: [Synth 8-3848] Net s70W01_command in module/entity route_27 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_27.vhd:18]
+WARNING: [Synth 8-3848] Net ne67_command in module/entity route_28 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_28.vhd:12]
+WARNING: [Synth 8-3848] Net ne70_command in module/entity route_28 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_28.vhd:14]
+WARNING: [Synth 8-3848] Net ne67_command in module/entity route_29 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_29.vhd:12]
+WARNING: [Synth 8-3848] Net ne103_command in module/entity route_29 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_29.vhd:14]
+WARNING: [Synth 8-3848] Net ne99_command in module/entity route_30 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_30.vhd:12]
+WARNING: [Synth 8-3848] Net ne97_command in module/entity route_30 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_30.vhd:14]
+WARNING: [Synth 8-3848] Net ne99_command in module/entity route_31 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_31.vhd:12]
+WARNING: [Synth 8-3848] Net ne106_command in module/entity route_31 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_31.vhd:14]
+WARNING: [Synth 8-3848] Net ne4_command in module/entity route_31 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_31.vhd:16]
+WARNING: [Synth 8-3848] Net ne96_command in module/entity route_32 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_32.vhd:12]
+WARNING: [Synth 8-3848] Net ne93_command in module/entity route_32 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_32.vhd:14]
+WARNING: [Synth 8-3848] Net ne78_command in module/entity route_32 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_32.vhd:16]
+WARNING: [Synth 8-3848] Net ne96_command in module/entity route_33 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_33.vhd:12]
+WARNING: [Synth 8-3848] Net ne98_command in module/entity route_33 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_33.vhd:14]
+WARNING: [Synth 8-3848] Net ne21_command in module/entity route_34 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_34.vhd:12]
+WARNING: [Synth 8-3848] Net ne21_command in module/entity route_35 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_35.vhd:12]
+WARNING: [Synth 8-3848] Net ne79_command in module/entity route_35 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_35.vhd:14]
+WARNING: [Synth 8-3848] Net ne78_command in module/entity route_35 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_35.vhd:16]
+WARNING: [Synth 8-3848] Net Sw06_command in module/entity route_35 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_35.vhd:18]
+WARNING: [Synth 8-3848] Net ne21_command in module/entity route_36 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_36.vhd:12]
+WARNING: [Synth 8-3848] Net ne94_command in module/entity route_36 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_36.vhd:14]
+WARNING: [Synth 8-3848] Net ne97_command in module/entity route_36 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_36.vhd:16]
+WARNING: [Synth 8-3848] Net ne99_command in module/entity route_36 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_36.vhd:18]
+WARNING: [Synth 8-3848] Net ne1_command in module/entity route_37 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_37.vhd:12]
+WARNING: [Synth 8-3848] Net ne9_command in module/entity route_37 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_37.vhd:14]
+WARNING: [Synth 8-3848] Net s68W02_command in module/entity route_37 does not have driver. [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_37.vhd:16]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-7129] Port leds[1] in module selector is either unconnected or has no load
 WARNING: [Synth 8-7129] Port leds[0] in module selector is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne12_command[1] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne12_command[0] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne24_command[1] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne24_command[0] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne8_command[1] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne8_command[0] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw12_command[1] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw12_command[0] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw13_command[1] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw13_command[0] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port clock in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port routeRequest in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne12_state[1] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne12_state[0] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne24_state[1] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne24_state[0] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne8_state[1] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne8_state[0] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw12_state[2] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw12_state[1] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw12_state[0] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw13_state[2] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw13_state[1] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw13_state[0] in module route_20 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne12_command[1] in module route_19 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne12_command[0] in module route_19 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne23_command[1] in module route_19 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne23_command[0] in module route_19 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw13_command[1] in module route_19 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw13_command[0] in module route_19 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port clock in module route_19 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port routeRequest in module route_19 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne12_state[1] in module route_19 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne12_state[0] in module route_19 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne23_state[1] in module route_19 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne23_state[0] in module route_19 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw13_state[2] in module route_19 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw13_state[1] in module route_19 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw13_state[0] in module route_19 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne8_command[1] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne8_command[0] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne24_command[1] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne24_command[0] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne12_command[1] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne12_command[0] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw12_command[1] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw12_command[0] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw13_command[1] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw13_command[0] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port clock in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port routeRequest in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne8_state[1] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne8_state[0] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne24_state[1] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne24_state[0] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne12_state[1] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne12_state[0] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw12_state[2] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw12_state[1] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw12_state[0] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw13_state[2] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw13_state[1] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw13_state[0] in module route_18 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne8_command[1] in module route_17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne8_command[0] in module route_17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne22_command[1] in module route_17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne22_command[0] in module route_17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw12_command[1] in module route_17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw12_command[0] in module route_17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port clock in module route_17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port routeRequest in module route_17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne8_state[1] in module route_17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne8_state[0] in module route_17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne22_state[1] in module route_17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne22_state[0] in module route_17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw12_state[2] in module route_17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw12_state[1] in module route_17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw12_state[0] in module route_17 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne15_command[1] in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne15_command[0] in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne9_command[1] in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne9_command[0] in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne1_command[1] in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne1_command[0] in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw04_command[1] in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw04_command[0] in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw07_command[1] in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw07_command[0] in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port clock in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port routeRequest in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne15_state[1] in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne15_state[0] in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne9_state[1] in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne9_state[0] in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne1_state[1] in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ne1_state[0] in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw04_state[2] in module route_16 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Sw04_state[1] in module route_16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne52_command[1] in module route_90 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne52_command[0] in module route_90 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne77_command[1] in module route_90 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne77_command[0] in module route_90 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clock in module route_90 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port routeRequest in module route_90 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne52_state[1] in module route_90 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne52_state[0] in module route_90 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne77_state[1] in module route_90 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne77_state[0] in module route_90 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne77_command[1] in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne77_command[0] in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne94_command[1] in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne94_command[0] in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne97_command[1] in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne97_command[0] in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne99_command[1] in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne99_command[0] in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clock in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port routeRequest in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne77_state[1] in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne77_state[0] in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne94_state[1] in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne94_state[0] in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne97_state[1] in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne97_state[0] in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne99_state[1] in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne99_state[0] in module route_89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne77_command[1] in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne77_command[0] in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne79_command[1] in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne79_command[0] in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne78_command[1] in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne78_command[0] in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw06_command[1] in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw06_command[0] in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clock in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port routeRequest in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne77_state[1] in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne77_state[0] in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne79_state[1] in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne79_state[0] in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne78_state[1] in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne78_state[0] in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw06_state[2] in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw06_state[1] in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw06_state[0] in module route_88 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne21_command[1] in module route_87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne21_command[0] in module route_87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne104_command[1] in module route_87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne104_command[0] in module route_87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clock in module route_87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port routeRequest in module route_87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne21_state[1] in module route_87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne21_state[0] in module route_87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne104_state[1] in module route_87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne104_state[0] in module route_87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne104_command[1] in module route_86 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne104_command[0] in module route_86 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne70_command[1] in module route_86 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne70_command[0] in module route_86 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clock in module route_86 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port routeRequest in module route_86 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne104_state[1] in module route_86 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne104_state[0] in module route_86 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne70_state[1] in module route_86 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne70_state[0] in module route_86 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne100_command[1] in module route_85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne100_command[0] in module route_85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne85_command[1] in module route_85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne85_command[0] in module route_85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw41_command[1] in module route_85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw41_command[0] in module route_85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clock in module route_85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port routeRequest in module route_85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne100_state[1] in module route_85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne100_state[0] in module route_85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne85_state[1] in module route_85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne85_state[0] in module route_85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw41_state[2] in module route_85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw41_state[1] in module route_85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw41_state[0] in module route_85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne100_command[1] in module route_84 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne100_command[0] in module route_84 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne110_command[1] in module route_84 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne110_command[0] in module route_84 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw41_command[1] in module route_84 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw41_command[0] in module route_84 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clock in module route_84 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port routeRequest in module route_84 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne100_state[1] in module route_84 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne100_state[0] in module route_84 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne110_state[1] in module route_84 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne110_state[0] in module route_84 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw41_state[2] in module route_84 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw41_state[1] in module route_84 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw41_state[0] in module route_84 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ne110_command[1] in module route_83 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1104.605 ; gain = 587.141
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1241.438 ; gain = 724.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1104.605 ; gain = 587.141
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1241.438 ; gain = 724.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1104.605 ; gain = 587.141
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1241.438 ; gain = 724.484
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'uart_rx'
@@ -441,15 +766,15 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                 restart |                              001 |                               00
-                 cycle_1 |                              010 |                               01
-                 cycle_2 |                              100 |                               10
+                 restart |                               00 |                               00
+                 cycle_1 |                               01 |                               01
+                 cycle_2 |                               10 |                               10
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'printer'
-WARNING: [Synth 8-327] inferring latch for variable 'processed_reg' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/printer.vhd:144]
-WARNING: [Synth 8-327] inferring latch for variable 'wr_uart_reg' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/printer.vhd:28]
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'printer'
+WARNING: [Synth 8-327] inferring latch for variable 'processed_reg' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/printer.vhd:356]
+WARNING: [Synth 8-327] inferring latch for variable 'wr_uart_reg' [C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/printer.vhd:28]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1120.320 ; gain = 602.855
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1366.742 ; gain = 849.789
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -458,45 +783,42 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input   32 Bit       Adders := 2     
-	   2 Input    9 Bit       Adders := 1     
-	   2 Input    8 Bit       Adders := 2     
-	   2 Input    7 Bit       Adders := 10    
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 12    
 	   2 Input    4 Bit       Adders := 2     
 	   2 Input    3 Bit       Adders := 2     
 +---Registers : 
-	               85 Bit    Registers := 2     
-	               74 Bit    Registers := 1     
+	              339 Bit    Registers := 2     
+	              286 Bit    Registers := 1     
+	               91 Bit    Registers := 1     
+	               82 Bit    Registers := 2     
+	               53 Bit    Registers := 1     
 	               32 Bit    Registers := 1     
-	               23 Bit    Registers := 2     
-	               21 Bit    Registers := 1     
-	               11 Bit    Registers := 1     
-	                9 Bit    Registers := 1     
-	                8 Bit    Registers := 261   
-	                7 Bit    Registers := 5     
-	                5 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 7     
+	                8 Bit    Registers := 1030  
 	                4 Bit    Registers := 3     
-	                3 Bit    Registers := 11    
-	                2 Bit    Registers := 12    
-	                1 Bit    Registers := 23    
+	                3 Bit    Registers := 20    
+	                2 Bit    Registers := 53    
+	                1 Bit    Registers := 33    
 +---Muxes : 
-	   2 Input   85 Bit        Muxes := 3     
-	   2 Input    9 Bit        Muxes := 1     
+	   2 Input  339 Bit        Muxes := 6     
+	   2 Input    9 Bit        Muxes := 5     
 	   4 Input    8 Bit        Muxes := 1     
-	   2 Input    8 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 4     
 	   4 Input    4 Bit        Muxes := 2     
-	   4 Input    3 Bit        Muxes := 16    
-	   2 Input    3 Bit        Muxes := 9     
-	   5 Input    3 Bit        Muxes := 7     
-	   3 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 34    
+	   2 Input    3 Bit        Muxes := 17    
+	   5 Input    3 Bit        Muxes := 16    
 	   4 Input    2 Bit        Muxes := 3     
-	   2 Input    2 Bit        Muxes := 8     
-	   3 Input    2 Bit        Muxes := 11    
-	   2 Input    1 Bit        Muxes := 316   
-	   4 Input    1 Bit        Muxes := 27    
-	   5 Input    1 Bit        Muxes := 5     
-	   3 Input    1 Bit        Muxes := 4     
-	  75 Input    1 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 9     
+	   3 Input    2 Bit        Muxes := 54    
+	   2 Input    1 Bit        Muxes := 1185  
+	   4 Input    1 Bit        Muxes := 29    
+	   5 Input    1 Bit        Muxes := 15    
+	   3 Input    1 Bit        Muxes := 5     
+	 287 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -514,26 +836,25 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3332] Sequential element (printer_i/FSM_onehot_state_reg[2]) is unused and will be removed from module system.
-WARNING: [Synth 8-3332] Sequential element (printer_i/FSM_onehot_state_reg[1]) is unused and will be removed from module system.
-WARNING: [Synth 8-3332] Sequential element (printer_i/FSM_onehot_state_reg[0]) is unused and will be removed from module system.
-WARNING: [Synth 8-3332] Sequential element (printer_i/processed_reg) is unused and will be removed from module system.
-WARNING: [Synth 8-3332] Sequential element (printer_i/wr_uart_reg) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (system_i/printer_i/FSM_sequential_state_reg[1]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/printer_i/FSM_sequential_state_reg[0]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/printer_i/processed_reg) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/printer_i/wr_uart_reg) is unused and will be removed from module global.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1384.570 ; gain = 867.105
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1501.996 ; gain = 985.043
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1384.570 ; gain = 867.105
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1501.996 ; gain = 985.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1384.570 ; gain = 867.105
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1501.996 ; gain = 985.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -551,37 +872,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1384.570 ; gain = 867.105
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1501.996 ; gain = 985.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1384.570 ; gain = 867.105
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1501.996 ; gain = 985.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1384.570 ; gain = 867.105
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1501.996 ; gain = 985.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1384.570 ; gain = 867.105
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1501.996 ; gain = 985.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1384.570 ; gain = 867.105
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1501.996 ; gain = 985.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1384.570 ; gain = 867.105
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1501.996 ; gain = 985.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -598,18 +919,18 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    40|
-|3     |LUT1   |    11|
-|4     |LUT2   |   100|
-|5     |LUT3   |    47|
-|6     |LUT4   |    43|
-|7     |LUT5   |    66|
-|8     |LUT6   |   858|
-|9     |MUXF7  |   264|
-|10    |MUXF8  |   128|
-|11    |FDCE   |  2129|
+|2     |CARRY4 |    44|
+|3     |LUT1   |    34|
+|4     |LUT2   |   223|
+|5     |LUT3   |    48|
+|6     |LUT4   |   241|
+|7     |LUT5   |    38|
+|8     |LUT6   |  3297|
+|9     |MUXF7  |  1088|
+|10    |MUXF8  |   536|
+|11    |FDCE   |  8415|
 |12    |FDPE   |     3|
-|13    |FDRE   |   177|
+|13    |FDRE   |   235|
 |14    |FDSE   |     2|
 |15    |IBUF   |     5|
 |16    |OBUF   |    11|
@@ -619,41 +940,41 @@ Report Instance Areas:
 +------+------------------+--------------+------+
 |      |Instance          |Module        |Cells |
 +------+------------------+--------------+------+
-|1     |top               |              |  3885|
-|2     |  system_i        |system        |   154|
-|3     |    detector_i    |detector      |    65|
-|4     |    selector_i    |selector      |    20|
-|5     |  uartControl_i   |uartControl   |   152|
-|6     |  uart_inst       |uart          |  3562|
-|7     |    baud_gen_unit |uart_baud_gen |    24|
-|8     |    fifo_rx_unit  |fifo          |  1736|
-|9     |    fifo_tx_unit  |fifo_0        |  1718|
-|10    |    uart_rx_unit  |uart_rx       |    45|
-|11    |    uart_tx_unit  |uart_tx       |    39|
+|1     |top               |              | 14221|
+|2     |  system_i        |system        |   218|
+|3     |    detector_i    |detector      |    69|
+|4     |    selector_i    |selector      |    79|
+|5     |  uartControl_i   |uartControl   |   155|
+|6     |  uart_inst       |uart          | 13831|
+|7     |    baud_gen_unit |uart_baud_gen |    22|
+|8     |    fifo_rx_unit  |fifo          |  6827|
+|9     |    fifo_tx_unit  |fifo_0        |  6841|
+|10    |    uart_rx_unit  |uart_rx       |   102|
+|11    |    uart_tx_unit  |uart_tx       |    37|
 +------+------------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1384.570 ; gain = 867.105
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1501.996 ; gain = 985.043
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 594 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1384.570 ; gain = 867.105
-Synthesis Optimization Complete : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1384.570 ; gain = 867.105
+Synthesis finished with 0 errors, 0 critical warnings and 2522 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1501.996 ; gain = 985.043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1501.996 ; gain = 985.043
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1387.434 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 432 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1501.996 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1668 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1406.590 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1501.996 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 The system cannot find the path specified.
-Synth Design complete | Checksum: 8e9ad047
+Synth Design complete | Checksum: ddeb87fd
 INFO: [Common 17-83] Releasing license: Synthesis
-182 Infos, 184 Warnings, 0 Critical Warnings and 0 Errors encountered.
+478 Infos, 210 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1406.590 ; gain = 895.844
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1406.590 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:28 . Memory (MB): peak = 1501.996 ; gain = 991.883
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1501.996 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/menen/OneDrive/Documentos/GICSAFePhD/FPGA/FPGA.runs/synth_1/global.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file global_utilization_synth.rpt -pb global_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Mar  4 21:49:53 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  5 21:27:41 2024...
