@@ -1,0 +1,25 @@
++====================+===================+==================================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                              |
++====================+===================+==================================================================================+
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/route_R8/restart_reg/D                         |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/route_R14/restart_reg/D                        |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/route_R18/restart_reg/D                        |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/route_R11/restart_reg/D                        |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/route_R5/restart_reg/D                         |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/route_R15/restart_reg/D                        |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/route_R6/restart_reg/D                         |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/route_R13/restart_reg/D                        |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/route_R9/restart_reg/D                         |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/route_R20/restart_reg/D                        |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/route_R10/restart_reg/D                        |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/route_R21/restart_reg/D                        |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/route_R7/restart_reg/D                         |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/route_R17/restart_reg/D                        |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/singleSwitch_Sw12/restart_reg/D                |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/singleSwitch_Sw07/restart_reg/D                |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/singleSwitch_Sw07/correspondence_Sw07_reg[1]/D |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/singleSwitch_Sw07/correspondence_Sw07_reg[0]/D |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/route_R16/restart_reg/D                        |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/route_R1/restart_reg/D                         |
+| sys_clk_pin        | sys_clk_pin       | system_i/interlocking_i/network_i/route_R19/restart_reg/D                        |
++--------------------+-------------------+----------------------------------------------------------------------------------+

@@ -1,0 +1,19 @@
+$date
+   Wed May 22 21:01:41 2024
+$end
+
+$version
+  2023.2.2
+$end
+
+$timescale
+  1ps
+$end
+
+$enddefinitions $end
+$dumpports
+$end
+
+$vcdclose
+#0
+$end

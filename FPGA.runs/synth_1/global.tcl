@@ -70,10 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache C:/Users/menen/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-19820-Kaltakar/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_param chipscope.maxJobs 8
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -91,182 +89,85 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/detector.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/my_package.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/fifo.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/uart_baud_gen.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/uart_rx.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/uart_tx.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/uart.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/interlocking.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/levelCrossing_0.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/mediator.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/network.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_0.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_1.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_10.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_11.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_12.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_13.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_14.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_15.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_16.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_17.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_18.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_19.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_2.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_20.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_21.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_22.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_23.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_24.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_25.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_26.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_27.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_28.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_29.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_3.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_30.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_31.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_32.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_33.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_34.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_35.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_36.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_37.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_38.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_39.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_4.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_40.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_41.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_42.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_43.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_44.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_45.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_46.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_47.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_48.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_49.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_5.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_50.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_51.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_52.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_6.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_7.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_8.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/node_9.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/printer.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_0.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_1.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_10.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_11.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_12.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_13.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_14.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_15.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_16.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_17.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_18.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_19.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_2.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_20.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_21.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_22.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_23.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_24.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_25.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_26.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_27.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_28.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_29.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_3.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_30.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_31.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_32.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_33.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_34.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_35.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_36.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_37.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_38.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_39.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_4.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_40.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_41.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_42.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_43.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_44.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_45.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_46.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_47.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_48.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_49.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_5.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_50.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_51.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_52.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_53.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_54.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_55.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_56.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_57.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_58.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_59.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_6.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_60.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_61.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_62.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_63.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_64.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_65.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_66.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_67.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_68.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_69.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_7.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_70.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_71.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_72.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_73.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_74.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_75.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_76.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_77.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_78.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_79.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_8.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_80.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_81.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_82.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_83.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_84.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_85.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_86.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_87.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_88.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_89.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_9.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/route_90.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/selector.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_0.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_1.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_10.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_11.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_12.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_13.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_14.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_2.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_3.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_4.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_5.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_6.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_7.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_8.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/singleSwitch_9.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/splitter.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/system.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/uartControl.vhd
-  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/global.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/detector.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/fifo.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_baud_gen.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_rx.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_tx.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uart.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/interlocking.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_0.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_1.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_10.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_2.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_3.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_4.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_5.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_6.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_7.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_8.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_9.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/printer.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_0.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_1.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_10.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_11.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_12.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_13.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_14.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_15.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_16.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_17.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_18.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_19.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_2.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_20.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_21.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_22.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_3.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_4.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_5.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_6.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_7.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_8.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_9.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_0.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_1.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_10.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_11.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_12.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_13.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_14.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_15.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_16.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_17.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_18.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_19.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_2.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_20.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_3.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_4.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_5.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_6.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_7.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_8.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_9.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/selector.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_1.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_2.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_3.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_4.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/system.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uartControl.vhd
+  C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/global.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -277,9 +178,10 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-set_param ips.enableIPCacheLiteLoad 1
+read_xdc C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/Arty_Z7-10.xdc
+set_property used_in_implementation false [get_files C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_3/VHDL/Arty_Z7-10.xdc]
 
-read_checkpoint -auto_incremental -incremental C:/Users/menen/OneDrive/Documentos/GICSAFePhD/FPGA/FPGA.srcs/utils_1/imports/synth_1/global.dcp
+set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
