@@ -1,0 +1,1381 @@
+
+*** Running vivado
+    with args -log global.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source global.tcl
+
+
+
+****** Vivado v2024.1.1 (64-bit)
+  **** SW Build 5094488 on Fri Jun 14 08:59:21 MDT 2024
+  **** IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
+  **** SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
+  **** Start of session at: Thu Jul 25 19:49:02 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source global.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/menen/AppData/Roaming/Xilinx/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/menen/Documents/GICSAFePhD/FPGA/FPGA.srcs/utils_1/imports/synth_2/global.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/menen/Documents/GICSAFePhD/FPGA/FPGA.srcs/utils_1/imports/synth_2/global.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top global -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28912
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1453.070 ; gain = 449.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'global' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/global.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'uart' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/uart.vhd:26]
+	Parameter DVSR bound to: 325 - type: integer 
+	Parameter DVSR_BIT bound to: 9 - type: integer 
+	Parameter FIFO_W_TX bound to: 7 - type: integer 
+	Parameter FIFO_W_RX bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uart_baud_gen' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_baud_gen.vhd:17]
+	Parameter N bound to: 9 - type: integer 
+	Parameter M bound to: 325 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_baud_gen' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_baud_gen.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_rx.vhd:19]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_rx.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'fifo' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/fifo.vhd:19]
+	Parameter B bound to: 8 - type: integer 
+	Parameter W bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/fifo.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_tx.vhd:20]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_tx.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'uart' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/uart.vhd:26]
+INFO: [Synth 8-3491] module 'uartControl' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/uartControl.vhd:6' bound to instance 'uartControl_i' of component 'uartControl' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/global.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'uartControl' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/uartControl.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'uartControl' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/uartControl.vhd:17]
+INFO: [Synth 8-3491] module 'system' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/system.vhd:8' bound to instance 'system_i' of component 'system' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/global.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'system' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/system.vhd:25]
+INFO: [Synth 8-3491] module 'detector' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/detector.vhd:8' bound to instance 'detector_i' of component 'detector' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/system.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'detector' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/detector.vhd:24]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/detector.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'detector' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/detector.vhd:24]
+INFO: [Synth 8-3491] module 'interlocking' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/interlocking.vhd:8' bound to instance 'interlocking_i' of component 'interlocking' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/system.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'interlocking' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/interlocking.vhd:25]
+INFO: [Synth 8-3491] module 'splitter' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:8' bound to instance 'splitter_i' of component 'splitter' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/interlocking.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'splitter' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:30]
+	Parameter N_TRACKCIRCUITS bound to: 11 - type: integer 
+	Parameter N_ROUTES bound to: 21 - type: integer 
+	Parameter N_SIGNALS bound to: 23 - type: integer 
+	Parameter N_LEVELCROSSINGS bound to: 2 - type: integer 
+	Parameter N_SINGLESWITCHES bound to: 5 - type: integer 
+	Parameter N bound to: 62 - type: integer 
+WARNING: [Synth 8-614] signal 'packet' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'splitter' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:30]
+INFO: [Synth 8-3491] module 'mediator' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:8' bound to instance 'mediator_i' of component 'mediator' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/interlocking.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'mediator' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:30]
+	Parameter N_TRACKCIRCUITS bound to: 11 - type: integer 
+	Parameter N_ROUTES bound to: 21 - type: integer 
+	Parameter N_SIGNALS bound to: 23 - type: integer 
+	Parameter N_LEVELCROSSINGS bound to: 2 - type: integer 
+	Parameter N_SINGLESWITCHES bound to: 5 - type: integer 
+	Parameter N bound to: 62 - type: integer 
+WARNING: [Synth 8-614] signal 'tracks' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:32]
+WARNING: [Synth 8-614] signal 'routes' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:32]
+WARNING: [Synth 8-614] signal 'signals' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:32]
+WARNING: [Synth 8-614] signal 'levelCrossings' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:32]
+WARNING: [Synth 8-614] signal 'singleSwitches' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'mediator' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:30]
+INFO: [Synth 8-3491] module 'network' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:8' bound to instance 'network_A' of component 'network' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/interlocking.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'network' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:34]
+	Parameter N_TRACKCIRCUITS bound to: 11 - type: integer 
+	Parameter N_ROUTES bound to: 21 - type: integer 
+	Parameter N_SIGNALS bound to: 23 - type: integer 
+	Parameter N_LEVELCROSSINGS bound to: 2 - type: integer 
+	Parameter N_SINGLESWITCHES bound to: 5 - type: integer 
+	Parameter N bound to: 62 - type: integer 
+INFO: [Synth 8-3491] module 'levelCrossing_0' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:8' bound to instance 'levelCrossing_Lc08' of component 'levelCrossing_0' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:1193]
+INFO: [Synth 8-638] synthesizing module 'levelCrossing_0' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:13]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'flipFlop' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:13]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'levelCrossing_0' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd:21]
+INFO: [Synth 8-3491] module 'levelCrossing_1' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:8' bound to instance 'levelCrossing_Lc06' of component 'levelCrossing_1' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:1194]
+INFO: [Synth 8-638] synthesizing module 'levelCrossing_1' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'levelCrossing_1' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd:23]
+INFO: [Synth 8-3491] module 'singleSwitch_0' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:8' bound to instance 'singleSwitch_Sw04' of component 'singleSwitch_0' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:1195]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_0' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:27]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Synth 8-3491] module 'flipFlop' declared at 'C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd:6' bound to instance 'inst' of component 'flipFlop' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:56]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_0' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_1' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_1.vhd:24]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_1' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_1.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_2' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_2.vhd:22]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_2' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_2.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_3' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_3.vhd:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_3' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_3.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'singleSwitch_4' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_4.vhd:22]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'singleSwitch_4' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_4.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_0' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_0.vhd:22]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_0' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_0.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_1' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_1.vhd:42]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+WARNING: [Synth 8-614] signal 'Sw12_position' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_1.vhd:178]
+WARNING: [Synth 8-614] signal 'Sw13_position' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_1.vhd:178]
+WARNING: [Synth 8-614] signal 'Lc06_position' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_1.vhd:178]
+WARNING: [Synth 8-614] signal 'ne8_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_1.vhd:207]
+WARNING: [Synth 8-614] signal 'ne9_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_1.vhd:207]
+WARNING: [Synth 8-614] signal 'ne14_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_1.vhd:207]
+WARNING: [Synth 8-614] signal 'ne15_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_1.vhd:207]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_1' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_1.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_2' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_2.vhd:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_2' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_2.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_3' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_3.vhd:36]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+WARNING: [Synth 8-614] signal 'Sw13_position' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_3.vhd:152]
+WARNING: [Synth 8-614] signal 'Sw12_position' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_3.vhd:152]
+WARNING: [Synth 8-614] signal 'Lc08_position' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_3.vhd:152]
+WARNING: [Synth 8-614] signal 'ne12_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_3.vhd:178]
+WARNING: [Synth 8-614] signal 'ne13_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_3.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_3' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_3.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_4' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_4.vhd:26]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+WARNING: [Synth 8-614] signal 'ne1_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_4.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_4' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_4.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_5' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_5.vhd:35]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+WARNING: [Synth 8-614] signal 'ne22_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_5.vhd:166]
+WARNING: [Synth 8-614] signal 'ne24_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_5.vhd:166]
+WARNING: [Synth 8-614] signal 'ne12_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_5.vhd:166]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_5' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_5.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_6' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_6.vhd:26]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+WARNING: [Synth 8-614] signal 'ne2_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_6.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_6' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_6.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_7' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_7.vhd:34]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+WARNING: [Synth 8-614] signal 'ne23_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_7.vhd:161]
+WARNING: [Synth 8-614] signal 'ne24_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_7.vhd:161]
+WARNING: [Synth 8-614] signal 'ne8_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_7.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_7' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_7.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_8' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_8.vhd:20]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_8' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_8.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_9' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_9.vhd:26]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+WARNING: [Synth 8-614] signal 'Lc08_position' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_9.vhd:108]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_9' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_9.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_10' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_10.vhd:25]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+WARNING: [Synth 8-614] signal 'ne2_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_10.vhd:119]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_10' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_10.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_11' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_11.vhd:20]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_11' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_11.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_12' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_12.vhd:28]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+WARNING: [Synth 8-614] signal 'Lc06_position' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_12.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_12' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_12.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_13' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_13.vhd:24]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+WARNING: [Synth 8-614] signal 'Lc06_position' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_13.vhd:94]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_13' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_13.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_14' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_14.vhd:28]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+WARNING: [Synth 8-614] signal 'Lc06_position' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_14.vhd:114]
+WARNING: [Synth 8-614] signal 'ne9_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_14.vhd:134]
+WARNING: [Synth 8-614] signal 'ne1_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_14.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_14' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_14.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_15' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_15.vhd:20]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_15' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_15.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_16' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_16.vhd:27]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_16' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_16.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_17' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_17.vhd:27]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+WARNING: [Synth 8-614] signal 'ne9_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_17.vhd:129]
+WARNING: [Synth 8-614] signal 'ne1_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_17.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_17' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_17.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_18' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_18.vhd:20]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_18' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_18.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_19' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_19.vhd:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_19' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_19.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_20' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_20.vhd:28]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+WARNING: [Synth 8-614] signal 'ne8_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_20.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_20' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_20.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_21' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_21.vhd:28]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+WARNING: [Synth 8-614] signal 'ne12_lock' is read in the process but is not in the sensitivity list [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_21.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_21' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_21.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'railwaySignal_22' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_22.vhd:20]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'railwaySignal_22' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_22.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'node_0' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_0.vhd:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'node_0' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_0.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'node_1' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_1.vhd:19]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'node_1' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_1.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'node_2' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_2.vhd:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'node_2' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_2.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'node_3' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_3.vhd:19]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'node_3' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_3.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'node_4' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_4.vhd:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'node_4' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_4.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'node_5' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_5.vhd:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'node_5' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_5.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'node_6' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_6.vhd:19]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'node_6' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_6.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'node_7' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_7.vhd:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'node_7' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_7.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'node_8' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_8.vhd:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'node_8' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_8.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'node_9' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_9.vhd:17]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'node_9' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_9.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'node_10' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_10.vhd:17]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'node_10' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/node_10.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'route_0' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_0.vhd:30]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'route_0' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_0.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'route_1' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_1.vhd:32]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'route_1' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_1.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'route_2' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_2.vhd:30]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'route_2' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_2.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'route_3' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_3.vhd:26]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'route_3' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_3.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'route_4' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_4.vhd:32]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'route_4' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_4.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'route_5' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_5.vhd:32]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'route_5' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_5.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'route_6' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_6.vhd:28]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'route_6' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_6.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'route_7' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_7.vhd:36]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'route_7' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_7.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'route_8' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_8.vhd:30]
+INFO: [Synth 8-226] default block is never used [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd:49]
+INFO: [Common 17-14] Message 'Synth 8-226' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'route_8' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_8.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'route_9' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_9.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'route_9' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_9.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'route_10' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_10.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'route_10' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_10.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'route_11' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_11.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'route_11' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_11.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'route_12' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_12.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'route_12' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_12.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'route_13' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_13.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'route_13' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_13.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'route_14' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_14.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'route_14' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_14.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'route_15' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_15.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'route_15' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_15.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'route_16' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_16.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'route_16' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_16.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'route_17' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_17.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'route_17' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_17.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'route_18' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_18.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'route_18' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_18.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'route_19' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_19.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'route_19' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_19.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'route_20' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_20.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'route_20' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/route_20.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'network' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'voter' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/voter.vhd:46]
+	Parameter N_TRACKCIRCUITS bound to: 11 - type: integer 
+	Parameter N_ROUTES bound to: 21 - type: integer 
+	Parameter N_SIGNALS bound to: 23 - type: integer 
+	Parameter N_LEVELCROSSINGS bound to: 2 - type: integer 
+	Parameter N_SINGLESWITCHES bound to: 5 - type: integer 
+	Parameter N bound to: 62 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'voter' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/voter.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'interlocking' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/interlocking.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'printer' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/printer.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'printer' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/printer.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'selector' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/selector.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'selector' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/selector.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'system' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/system.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'global' (0#1) [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/global.vhd:19]
+WARNING: [Synth 8-7129] Port track_ne12[1] in module route_20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne24[1] in module route_20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne8[1] in module route_20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw04_state[1] in module route_20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw04_state[0] in module route_20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw12_state[1] in module route_20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw12_state[0] in module route_20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw13_state[1] in module route_20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw13_state[0] in module route_20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S35_state[1] in module route_20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S35_state[0] in module route_20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C21_state[1] in module route_20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C21_state[0] in module route_20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne12[1] in module route_19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne23[1] in module route_19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw13_state[1] in module route_19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw13_state[0] in module route_19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S35_state[1] in module route_19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S35_state[0] in module route_19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port J14_state[1] in module route_19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port J14_state[0] in module route_19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne8[1] in module route_18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne24[1] in module route_18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne12[1] in module route_18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw06_state[1] in module route_18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw06_state[0] in module route_18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw12_state[1] in module route_18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw12_state[0] in module route_18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw13_state[1] in module route_18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw13_state[0] in module route_18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S32_state[1] in module route_18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S32_state[0] in module route_18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C25_state[1] in module route_18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C25_state[0] in module route_18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne8[1] in module route_17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne22[1] in module route_17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw12_state[1] in module route_17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw12_state[0] in module route_17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S32_state[1] in module route_17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S32_state[0] in module route_17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port J11_state[1] in module route_17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port J11_state[0] in module route_17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne15[1] in module route_16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne9[1] in module route_16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne1[1] in module route_16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw04_state[1] in module route_16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw04_state[0] in module route_16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw07_state[1] in module route_16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw07_state[0] in module route_16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C29_state[1] in module route_16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C29_state[0] in module route_16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L07_state[1] in module route_16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L07_state[0] in module route_16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne2[1] in module route_15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne13[1] in module route_15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Lc08_state[1] in module route_15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Lc08_state[0] in module route_15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw06_state[1] in module route_15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw06_state[0] in module route_15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S27_state[1] in module route_15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S27_state[0] in module route_15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T01_state[1] in module route_15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T01_state[0] in module route_15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne2[1] in module route_14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne12[1] in module route_14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw06_state[1] in module route_14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw06_state[0] in module route_14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw13_state[1] in module route_14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw13_state[0] in module route_14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S27_state[1] in module route_14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S27_state[0] in module route_14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S35_state[1] in module route_14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S35_state[0] in module route_14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne12[1] in module route_13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne2[1] in module route_13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw06_state[1] in module route_13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw06_state[0] in module route_13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C25_state[1] in module route_13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C25_state[0] in module route_13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L08_state[1] in module route_13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L08_state[0] in module route_13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne1[1] in module route_12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne9[1] in module route_12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne15[1] in module route_12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw04_state[1] in module route_12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw04_state[0] in module route_12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw07_state[1] in module route_12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw07_state[0] in module route_12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S22_state[1] in module route_12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S22_state[0] in module route_12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T05_state[1] in module route_12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T05_state[0] in module route_12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne1[1] in module route_11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne9[1] in module route_11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port track_ne14[1] in module route_11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Lc06_state[1] in module route_11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Lc06_state[0] in module route_11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw04_state[1] in module route_11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw04_state[0] in module route_11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sw07_state[1] in module route_11 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1708.707 ; gain = 705.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1708.707 ; gain = 705.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1708.707 ; gain = 705.340
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.173 . Memory (MB): peak = 1708.707 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_3/VHDL/Arty_Z7-10.xdc]
+WARNING: [Vivado 12-507] No nets matched 'reset_IBUF'. [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_3/VHDL/Arty_Z7-10.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_3/VHDL/Arty_Z7-10.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_3/VHDL/Arty_Z7-10.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_3/VHDL/Arty_Z7-10.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/global_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/global_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1809.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1809.809 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1809.809 ; gain = 806.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1809.809 ; gain = 806.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1809.809 ; gain = 806.441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'detector'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_0'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_1'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_2'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_3'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_4'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_5'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_6'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_7'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_8'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_9'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_10'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_11'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_12'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_13'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_14'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_15'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_16'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_17'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_18'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_19'
+INFO: [Synth 8-802] inferred FSM for state register 'routeState_reg' in module 'route_20'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'printer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+                    data |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+                    data |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                 reading |                             0010 |                               01
+                   final |                             0100 |                               10
+                   error |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'detector'
+WARNING: [Synth 8-327] inferring latch for variable 'tracks_reg[10]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'tracks_reg[9]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'tracks_reg[8]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'tracks_reg[7]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'tracks_reg[6]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'tracks_reg[5]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'tracks_reg[4]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'tracks_reg[3]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'tracks_reg[2]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'tracks_reg[1]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'tracks_reg[0]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[20]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[19]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[18]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[17]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[16]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[15]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[14]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[13]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[12]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[11]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[10]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[9]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[8]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[7]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[6]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[5]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[4]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[3]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[2]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[1]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'routes_reg[0]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[22]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[21]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[20]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[19]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[18]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[17]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[16]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[15]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[14]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[13]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[12]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[11]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[10]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[9]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[8]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[7]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[6]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[5]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[4]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[3]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[2]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[1]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'signals_reg[0]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'levelCrossings_reg[1]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:38]
+WARNING: [Synth 8-327] inferring latch for variable 'levelCrossings_reg[0]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:38]
+WARNING: [Synth 8-327] inferring latch for variable 'singleSwitches_reg[4]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:39]
+WARNING: [Synth 8-327] inferring latch for variable 'singleSwitches_reg[3]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:39]
+WARNING: [Synth 8-327] inferring latch for variable 'singleSwitches_reg[2]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:39]
+WARNING: [Synth 8-327] inferring latch for variable 'singleSwitches_reg[1]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:39]
+WARNING: [Synth 8-327] inferring latch for variable 'singleSwitches_reg[0]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd:39]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[61]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[60]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[59]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[58]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[57]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[56]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[55]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[54]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[53]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[52]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[51]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[50]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[49]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[48]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[47]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[46]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[45]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[44]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[43]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[42]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[41]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[40]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[39]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[38]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[37]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[36]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[35]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[34]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[33]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[32]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[31]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[30]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[29]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[28]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[27]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[26]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[25]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg[24]' [C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd:35]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                        000000001 |                             0000
+        reserving_tracks |                        000000010 |                             0010
+          locking_tracks |                        000000100 |                             0011
+reserving_infrastructure |                        000001000 |                             0100
+  locking_infrastructure |                        000010000 |                             0101
+          driving_signal |                        000100000 |                             0110
+      sequential_release |                        001000000 |                             0111
+            cancel_route |                        010000000 |                             1001
+releasing_infrastructure |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'one-hot' in module 'route_3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_6'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_8'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_9'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_10'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_11'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_12'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_13'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_14'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_15'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_16'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_17'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_18'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_19'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waiting_command |                             0000 |                             0000
+        reserving_tracks |                             0001 |                             0010
+          locking_tracks |                             0010 |                             0011
+reserving_infrastructure |                             0011 |                             0100
+  locking_infrastructure |                             0100 |                             0101
+          driving_signal |                             0101 |                             0110
+      sequential_release |                             0110 |                             0111
+            cancel_route |                             0111 |                             1001
+releasing_infrastructure |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'routeState_reg' using encoding 'sequential' in module 'route_20'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 restart |                              001 |                               00
+                 cycle_1 |                              010 |                               01
+                 cycle_2 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'printer'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 1809.809 ; gain = 806.441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'system_i/interlocking_i/network_A' (network) to 'system_i/interlocking_i/network_B'
+INFO: [Synth 8-223] decloning instance 'system_i/interlocking_i/network_A' (network) to 'system_i/interlocking_i/network_C'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 9     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 260   
+	                7 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 127   
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 105   
+	                1 Bit    Registers := 1648  
++---Muxes : 
+	   9 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 4     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 315   
+	   4 Input    4 Bit        Muxes := 4     
+	   9 Input    4 Bit        Muxes := 41    
+	   4 Input    3 Bit        Muxes := 14    
+	   2 Input    3 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 59    
+	   2 Input    2 Bit        Muxes := 124   
+	   5 Input    2 Bit        Muxes := 14    
+	   7 Input    2 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 22    
+	   9 Input    2 Bit        Muxes := 56    
+	   2 Input    1 Bit        Muxes := 431   
+	   4 Input    1 Bit        Muxes := 96    
+	   7 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 10    
+	   9 Input    1 Bit        Muxes := 232   
+	   3 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/tracks_reg[10][1]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/tracks_reg[9][1]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/tracks_reg[8][1]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/tracks_reg[7][1]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/tracks_reg[6][1]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/tracks_reg[5][1]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/tracks_reg[4][1]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/tracks_reg[3][1]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/tracks_reg[2][1]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/tracks_reg[1][1]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/tracks_reg[0][1]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[22][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[22][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[21][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[21][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[20][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[20][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[19][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[19][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[18][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[18][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[17][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[17][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[16][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[16][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[15][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[15][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[14][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[14][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[13][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[13][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[12][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[12][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[11][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[11][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[10][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[10][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[9][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[9][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[8][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[8][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[7][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[7][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[6][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[6][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[5][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[5][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[4][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[4][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[3][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[3][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[2][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[2][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[1][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[1][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[0][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/signals_reg[0][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/levelCrossings_reg[1][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/levelCrossings_reg[1][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/levelCrossings_reg[0][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/levelCrossings_reg[0][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/singleSwitches_reg[4][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/singleSwitches_reg[4][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/singleSwitches_reg[3][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/singleSwitches_reg[3][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/singleSwitches_reg[2][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/singleSwitches_reg[2][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/singleSwitches_reg[1][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/singleSwitches_reg[1][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/singleSwitches_reg[0][3]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/splitter_i/singleSwitches_reg[0][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (system_i/interlocking_i/mediator_i/output_reg[32][2]) is unused and will be removed from module global.
+WARNING: [Synth 8-3332] Sequential element (commandState_reg[0]) is unused and will be removed from module railwaySignal_0.
+WARNING: [Synth 8-3332] Sequential element (timeout_reg) is unused and will be removed from module railwaySignal_0.
+WARNING: [Synth 8-3332] Sequential element (restart_reg) is unused and will be removed from module railwaySignal_0.
+WARNING: [Synth 8-3332] Sequential element (correspondenceState_reg[1]) is unused and will be removed from module railwaySignal_1.
+WARNING: [Synth 8-3332] Sequential element (correspondenceState_reg[0]) is unused and will be removed from module railwaySignal_1.
+WARNING: [Synth 8-3332] Sequential element (commandState_reg[1]) is unused and will be removed from module railwaySignal_1.
+WARNING: [Synth 8-3332] Sequential element (aspectStateOut_reg[1]) is unused and will be removed from module railwaySignal_1.
+WARNING: [Synth 8-3332] Sequential element (aspectStateOut_reg[0]) is unused and will be removed from module railwaySignal_1.
+WARNING: [Synth 8-3332] Sequential element (path_reg[3]) is unused and will be removed from module railwaySignal_1.
+WARNING: [Synth 8-3332] Sequential element (railwaySignal_L08/commandState_reg[0]) is unused and will be removed from module network.
+WARNING: [Synth 8-3332] Sequential element (railwaySignal_L08/restart_reg) is unused and will be removed from module network.
+WARNING: [Synth 8-3332] Sequential element (correspondenceState_reg[1]) is unused and will be removed from module railwaySignal_3.
+WARNING: [Synth 8-3332] Sequential element (correspondenceState_reg[0]) is unused and will be removed from module railwaySignal_3.
+WARNING: [Synth 8-3332] Sequential element (commandState_reg[1]) is unused and will be removed from module railwaySignal_3.
+WARNING: [Synth 8-3332] Sequential element (aspectStateOut_reg[1]) is unused and will be removed from module railwaySignal_3.
+WARNING: [Synth 8-3332] Sequential element (aspectStateOut_reg[0]) is unused and will be removed from module railwaySignal_3.
+WARNING: [Synth 8-3332] Sequential element (path_reg[3]) is unused and will be removed from module railwaySignal_3.
+WARNING: [Synth 8-3332] Sequential element (aspectStateOut_reg[1]) is unused and will be removed from module railwaySignal_4.
+WARNING: [Synth 8-3332] Sequential element (aspectStateOut_reg[0]) is unused and will be removed from module railwaySignal_4.
+WARNING: [Synth 8-3332] Sequential element (aspectStateOut_reg[1]) is unused and will be removed from module railwaySignal_5.
+WARNING: [Synth 8-3332] Sequential element (aspectStateOut_reg[0]) is unused and will be removed from module railwaySignal_5.
+WARNING: [Synth 8-3332] Sequential element (path_reg[2]) is unused and will be removed from module railwaySignal_5.
+WARNING: [Synth 8-3332] Sequential element (aspectStateOut_reg[1]) is unused and will be removed from module railwaySignal_6.
+WARNING: [Synth 8-3332] Sequential element (aspectStateOut_reg[0]) is unused and will be removed from module railwaySignal_6.
+WARNING: [Synth 8-3332] Sequential element (aspectStateOut_reg[1]) is unused and will be removed from module railwaySignal_7.
+WARNING: [Synth 8-3332] Sequential element (aspectStateOut_reg[0]) is unused and will be removed from module railwaySignal_7.
+WARNING: [Synth 8-3332] Sequential element (path_reg[2]) is unused and will be removed from module railwaySignal_7.
+WARNING: [Synth 8-3332] Sequential element (railwaySignal_T01/commandState_reg[1]) is unused and will be removed from module network.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 1809.809 ; gain = 806.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:35 . Memory (MB): peak = 1809.809 ; gain = 806.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:35 . Memory (MB): peak = 1809.809 ; gain = 806.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:37 . Memory (MB): peak = 1809.809 ; gain = 806.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:39 . Memory (MB): peak = 1809.809 ; gain = 806.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:39 . Memory (MB): peak = 1809.809 ; gain = 806.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:39 . Memory (MB): peak = 1809.809 ; gain = 806.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:39 . Memory (MB): peak = 1809.809 ; gain = 806.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:39 . Memory (MB): peak = 1809.809 ; gain = 806.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:39 . Memory (MB): peak = 1809.809 ; gain = 806.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |    32|
+|3     |LUT1   |   896|
+|4     |LUT2   |   236|
+|5     |LUT3   |   278|
+|6     |LUT4   |   425|
+|7     |LUT5   |   387|
+|8     |LUT6   |  1595|
+|9     |MUXF7  |   319|
+|10    |MUXF8  |   128|
+|11    |FDCE   |  3194|
+|12    |FDPE   |     3|
+|13    |FDRE   |   595|
+|14    |FDSE   |    21|
+|15    |LD     |   444|
+|16    |LDC    |    55|
+|17    |LDCP   |    32|
+|18    |LDP    |    16|
+|19    |IBUF   |     4|
+|20    |OBUF   |    11|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:39 . Memory (MB): peak = 1809.809 ; gain = 806.441
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1142 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:37 . Memory (MB): peak = 1809.809 ; gain = 705.340
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:40 . Memory (MB): peak = 1809.809 ; gain = 806.441
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1809.809 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1026 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1809.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 547 instances were transformed.
+  LD => LDCE: 444 instances
+  LDC => LDCE: 55 instances
+  LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 32 instances
+  LDP => LDPE: 16 instances
+
+Synth Design complete | Checksum: 6c071132
+INFO: [Common 17-83] Releasing license: Synthesis
+440 Infos, 340 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:45 . Memory (MB): peak = 1809.809 ; gain = 1231.469
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1809.809 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/menen/Documents/GICSAFePhD/FPGA/FPGA.runs/synth_2/global.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file global_utilization_synth.rpt -pb global_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 25 19:49:54 2024...

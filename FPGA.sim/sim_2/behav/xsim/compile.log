@@ -1,0 +1,157 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/my_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'detector'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/fifo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/flipFlop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'flipFlop'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_baud_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_baud_gen'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_rx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_rx'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uart_tx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_tx'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/interlocking.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'interlocking'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'levelCrossing_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/levelCrossing_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'levelCrossing_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/mediator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mediator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/network.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'network'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'node_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'node_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_10.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'node_10'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'node_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'node_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'node_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'node_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'node_6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'node_7'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'node_8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/node_9.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'node_9'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/printer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'printer'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_10.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_10'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_11.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_11'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_12.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_12'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_13.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_13'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_14.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_14'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_15.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_15'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_16'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_17.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_17'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_18.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_18'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_19.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_19'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_20.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_20'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_21.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_21'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_22.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_22'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_7'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/railwaySignal_9.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'railwaySignal_9'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_10.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_10'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_11.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_11'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_12.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_12'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_13.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_13'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_14.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_14'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_15.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_15'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_16'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_17.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_17'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_18.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_18'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_19.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_19'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_20.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_20'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_7'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/route_9.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'route_9'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/selector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'selector'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'singleSwitch_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'singleSwitch_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'singleSwitch_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'singleSwitch_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/singleSwitch_4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'singleSwitch_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/splitter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'splitter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/system.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'system'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/uartControl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uartControl'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_1/VHDL/global.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'global'

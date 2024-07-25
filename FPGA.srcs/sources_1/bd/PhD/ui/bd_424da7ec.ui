@@ -1,0 +1,16 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-473,-174",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace inst global_0 -pg 1 -lvl 1 -x 140 -y 60 -defaultsOSRD
+levelinfo -pg 1 -10 140 440 630
+pagesize -pg 1 -db -bbox -sgen -130 -40 630 320
+"
+}
+{
+   "da_board_cnt":"3",
+   "da_clkrst_cnt":"1"
+}

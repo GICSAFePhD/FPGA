@@ -1,0 +1,1 @@
+--incr --debug "all" --rangecheck --relax --mt "2" -cc_libs -cc_celldefines -L "xil_defaultlib" -L "secureip" --snapshot "global_behav" "xil_defaultlib.global" -log "elaborate.log" 

@@ -10,43 +10,51 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="420,501"></ZoomEndTime>
-      <Cursor1Time time="16,520"></Cursor1Time>
+      <ZoomEndTime time="131,073"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="276"></NameColumnWidth>
-      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+      <ValueColumnWidth column_width="112"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="4" />
+   <WVObjectSize size="5" />
    <wave_markers>
    </wave_markers>
-   <wvobject fp_name="clock_IBUF" type="logic">
+   <wvobject fp_name="system_i/interlocking_i/network_i/route_R11/Q" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">clock_IBUF</obj_property>
-      <obj_property name="ObjectShortName">clock_IBUF</obj_property>
+      <obj_property name="ElementShortName">system_i/interlocking_i/network_i/route_R11/Q[0:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[0:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="leds_OBUF" type="array">
+   <wvobject fp_name="system_i/interlocking_i/network_i/route_R11/Sw04_command_reg[0]_0" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">leds_OBUF[3:0]</obj_property>
-      <obj_property name="ObjectShortName">leds_OBUF[3:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="ElementShortName">system_i/interlocking_i/network_i/route_R11/Sw04_command_reg[0]_0</obj_property>
+      <obj_property name="ObjectShortName">Sw04_command_reg[0]_0</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="uart_rxd_i_IBUF" type="logic">
+   <wvobject fp_name="system_i/interlocking_i/network_i/route_R11/Sw04_command_reg[1]_i_1__2_0" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">uart_rxd_i_IBUF</obj_property>
-      <obj_property name="ObjectShortName">uart_rxd_i_IBUF</obj_property>
+      <obj_property name="ElementShortName">system_i/interlocking_i/network_i/route_R11/Sw04_command_reg[1]_i_1__2_0[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Sw04_command_reg[1]_i_1__2_0[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="uart_txd_o_OBUF" type="logic">
+   <wvobject fp_name="system_i/interlocking_i/network_i/route_R11/ne1_command_reg[0]_i_1_n_0" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">uart_txd_o_OBUF</obj_property>
-      <obj_property name="ObjectShortName">uart_txd_o_OBUF</obj_property>
+      <obj_property name="ElementShortName">system_i/interlocking_i/network_i/route_R11/ne1_command_reg[0]_i_1_n_0</obj_property>
+      <obj_property name="ObjectShortName">ne1_command_reg[0]_i_1_n_0</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/interlocking_i/network_i/route_R11/ne8_command_reg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/interlocking_i/network_i/route_R11/ne8_command_reg[0:0]</obj_property>
+      <obj_property name="ObjectShortName">ne8_command_reg[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>

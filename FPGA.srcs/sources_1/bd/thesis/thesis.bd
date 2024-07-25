@@ -1,0 +1,186 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xA66D91E8A8EF1934",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../FPGA.gen/sources_1/bd/thesis",
+      "name": "thesis",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.1.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "global_0": "",
+      "clk_wiz_0": "",
+      "proc_sys_reset_0": ""
+    },
+    "ports": {
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "selector1": {
+        "direction": "I"
+      },
+      "selector2": {
+        "direction": "I"
+      },
+      "uart_rxd_i": {
+        "direction": "I"
+      },
+      "uart_txd_o": {
+        "direction": "O"
+      },
+      "leds": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "rgb_1": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "rgb_2": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "thesis_sys_clock",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0"
+          }
+        }
+      }
+    },
+    "components": {
+      "global_0": {
+        "vlnv": "xilinx.com:user:global:1.0",
+        "ip_revision": "2",
+        "xci_name": "thesis_global_0_0",
+        "xci_path": "ip\\thesis_global_0_0\\thesis_global_0_0.xci",
+        "inst_hier_path": "global_0"
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "14",
+        "xci_name": "thesis_clk_wiz_0_0",
+        "xci_path": "ip\\thesis_clk_wiz_0_0\\thesis_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "proc_sys_reset_0": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "ip_revision": "15",
+        "xci_name": "thesis_proc_sys_reset_0_0",
+        "xci_path": "ip\\thesis_proc_sys_reset_0_0\\thesis_proc_sys_reset_0_0.xci",
+        "inst_hier_path": "proc_sys_reset_0"
+      }
+    },
+    "nets": {
+      "global_0_leds": {
+        "ports": [
+          "global_0/leds",
+          "leds"
+        ]
+      },
+      "global_0_rgb_1": {
+        "ports": [
+          "global_0/rgb_1",
+          "rgb_1"
+        ]
+      },
+      "global_0_rgb_2": {
+        "ports": [
+          "global_0/rgb_2",
+          "rgb_2"
+        ]
+      },
+      "global_0_uart_txd_o": {
+        "ports": [
+          "global_0/uart_txd_o",
+          "uart_txd_o"
+        ]
+      },
+      "microblaze_0_Clk": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "global_0/clock",
+          "proc_sys_reset_0/slowest_sync_clk"
+        ]
+      },
+      "proc_sys_reset_0_mb_reset": {
+        "ports": [
+          "proc_sys_reset_0/mb_reset",
+          "global_0/reset"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "clk_wiz_0/reset",
+          "proc_sys_reset_0/ext_reset_in"
+        ]
+      },
+      "selector1_1": {
+        "ports": [
+          "selector1",
+          "global_0/selector1"
+        ]
+      },
+      "selector2_1": {
+        "ports": [
+          "selector2",
+          "global_0/selector2"
+        ]
+      },
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "uart_rxd_i_1": {
+        "ports": [
+          "uart_rxd_i",
+          "global_0/uart_rxd_i"
+        ]
+      }
+    }
+  }
+}

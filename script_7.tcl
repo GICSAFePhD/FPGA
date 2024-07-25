@@ -1,5 +1,5 @@
 # vivado -mode batch -source script.tcl -tclargs 1
-# cd C:/Users/menen/OneDrive/Documentos/GICSAFePhD/FPGA
+# cd C:/Users/menen/Documents/GICSAFePhD/FPGA
 # source script.tcl
 
 set chosen 7
@@ -9,7 +9,7 @@ set design_sources [get_files -of_objects [get_filesets sources_1]]
 
 remove_files $design_sources
 
-set base_folder_path "C:/Users/menen/OneDrive/Documentos/GICSAFePhD/App/Layouts/Example_"
+set base_folder_path "C:/Users/menen/Documents/GICSAFePhD/App/Layouts/Example_"
 set folder_path "${base_folder_path}${chosen}/VHDL"
 
 puts $folder_path

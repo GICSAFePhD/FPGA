@@ -1,0 +1,25 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../FPGA.gen/sources_1/bd/PhD",
+      "name": "PhD",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.1"
+    },
+    "design_tree": {
+      "global_0": ""
+    },
+    "components": {
+      "global_0": {
+        "vlnv": "xilinx.com:user:global:1.0",
+        "ip_revision": "2",
+        "xci_name": "PhD_global_0_0",
+        "xci_path": "ip\\PhD_global_0_0\\PhD_global_0_0.xci",
+        "inst_hier_path": "global_0"
+      }
+    }
+  }
+}

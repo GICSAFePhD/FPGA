@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="global_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="global" />
+            <top_module name="my_package" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="10.584550000 ms"></ZoomStartTime>
+      <ZoomEndTime time="1,213.584550001 ms"></ZoomEndTime>
+      <Cursor1Time time="300.000000000 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="140"></NameColumnWidth>
+      <ValueColumnWidth column_width="258"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="60" />
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/processing" type="logic">
+      <obj_property name="ElementShortName">processing</obj_property>
+      <obj_property name="ObjectShortName">processing</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/processed" type="logic">
+      <obj_property name="ElementShortName">processed</obj_property>
+      <obj_property name="ObjectShortName">processed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/tracks_i" type="array">
+      <obj_property name="ElementShortName">tracks_i[10:0]</obj_property>
+      <obj_property name="ObjectShortName">tracks_i[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/tracks_o" type="array">
+      <obj_property name="ElementShortName">tracks_o[10:0]</obj_property>
+      <obj_property name="ObjectShortName">tracks_o[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/signals_i" type="array">
+      <obj_property name="ElementShortName">signals_i[22:0]</obj_property>
+      <obj_property name="ObjectShortName">signals_i[22:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/signals_o" type="array">
+      <obj_property name="ElementShortName">signals_o[22:0]</obj_property>
+      <obj_property name="ObjectShortName">signals_o[22:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/routes_i" type="array">
+      <obj_property name="ElementShortName">routes_i[20:0]</obj_property>
+      <obj_property name="ObjectShortName">routes_i[20:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/routes_o" type="array">
+      <obj_property name="ElementShortName">routes_o[20:0]</obj_property>
+      <obj_property name="ObjectShortName">routes_o[20:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/levelCrossings_i" type="array">
+      <obj_property name="ElementShortName">levelCrossings_i[1:0]</obj_property>
+      <obj_property name="ObjectShortName">levelCrossings_i[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/levelCrossings_o" type="array">
+      <obj_property name="ElementShortName">levelCrossings_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">levelCrossings_o[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/singleSwitches_i" type="array">
+      <obj_property name="ElementShortName">singleSwitches_i[4:0]</obj_property>
+      <obj_property name="ObjectShortName">singleSwitches_i[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/singleSwitches_o" type="array">
+      <obj_property name="ElementShortName">singleSwitches_o[4:0]</obj_property>
+      <obj_property name="ObjectShortName">singleSwitches_o[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/state_Sw04" type="other">
+      <obj_property name="ElementShortName">state_Sw04</obj_property>
+      <obj_property name="ObjectShortName">state_Sw04</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/state_Sw12" type="other">
+      <obj_property name="ElementShortName">state_Sw12</obj_property>
+      <obj_property name="ObjectShortName">state_Sw12</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/state_S22" type="other">
+      <obj_property name="ElementShortName">state_S22</obj_property>
+      <obj_property name="ObjectShortName">state_S22</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/state_S32" type="other">
+      <obj_property name="ElementShortName">state_S32</obj_property>
+      <obj_property name="ObjectShortName">state_S32</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/cmd_R11_ne1" type="other">
+      <obj_property name="ElementShortName">cmd_R11_ne1</obj_property>
+      <obj_property name="ObjectShortName">cmd_R11_ne1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/cmd_R11_ne8" type="other">
+      <obj_property name="ElementShortName">cmd_R11_ne8</obj_property>
+      <obj_property name="ObjectShortName">cmd_R11_ne8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/state_ne1" type="other">
+      <obj_property name="ElementShortName">state_ne1</obj_property>
+      <obj_property name="ObjectShortName">state_ne1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/state_ne8" type="other">
+      <obj_property name="ElementShortName">state_ne8</obj_property>
+      <obj_property name="ObjectShortName">state_ne8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/cmd_R11_Sw04" type="other">
+      <obj_property name="ElementShortName">cmd_R11_Sw04</obj_property>
+      <obj_property name="ObjectShortName">cmd_R11_Sw04</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/cmd_R11_Sw12" type="other">
+      <obj_property name="ElementShortName">cmd_R11_Sw12</obj_property>
+      <obj_property name="ObjectShortName">cmd_R11_Sw12</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/cmd_R11_S22" type="other">
+      <obj_property name="ElementShortName">cmd_R11_S22</obj_property>
+      <obj_property name="ObjectShortName">cmd_R11_S22</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/cmd_R11_S32" type="other">
+      <obj_property name="ElementShortName">cmd_R11_S32</obj_property>
+      <obj_property name="ObjectShortName">cmd_R11_S32</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/routeRequest" type="other">
+      <obj_property name="ElementShortName">routeRequest</obj_property>
+      <obj_property name="ObjectShortName">routeRequest</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/track_ne1" type="other">
+      <obj_property name="ElementShortName">track_ne1</obj_property>
+      <obj_property name="ObjectShortName">track_ne1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/ne1_command" type="other">
+      <obj_property name="ElementShortName">ne1_command</obj_property>
+      <obj_property name="ObjectShortName">ne1_command</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/track_ne8" type="other">
+      <obj_property name="ElementShortName">track_ne8</obj_property>
+      <obj_property name="ObjectShortName">track_ne8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/ne8_command" type="other">
+      <obj_property name="ElementShortName">ne8_command</obj_property>
+      <obj_property name="ObjectShortName">ne8_command</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/Sw04_state" type="other">
+      <obj_property name="ElementShortName">Sw04_state</obj_property>
+      <obj_property name="ObjectShortName">Sw04_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/Sw04_command" type="other">
+      <obj_property name="ElementShortName">Sw04_command</obj_property>
+      <obj_property name="ObjectShortName">Sw04_command</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/Sw12_state" type="other">
+      <obj_property name="ElementShortName">Sw12_state</obj_property>
+      <obj_property name="ObjectShortName">Sw12_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/Sw12_command" type="other">
+      <obj_property name="ElementShortName">Sw12_command</obj_property>
+      <obj_property name="ObjectShortName">Sw12_command</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/S22_state" type="other">
+      <obj_property name="ElementShortName">S22_state</obj_property>
+      <obj_property name="ObjectShortName">S22_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/S22_command" type="other">
+      <obj_property name="ElementShortName">S22_command</obj_property>
+      <obj_property name="ObjectShortName">S22_command</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/S32_state" type="other">
+      <obj_property name="ElementShortName">S32_state</obj_property>
+      <obj_property name="ObjectShortName">S32_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/S32_command" type="other">
+      <obj_property name="ElementShortName">S32_command</obj_property>
+      <obj_property name="ObjectShortName">S32_command</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/routeExecute" type="other">
+      <obj_property name="ElementShortName">routeExecute</obj_property>
+      <obj_property name="ObjectShortName">routeExecute</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/restart" type="logic">
+      <obj_property name="ElementShortName">restart</obj_property>
+      <obj_property name="ObjectShortName">restart</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/Q" type="array">
+      <obj_property name="ElementShortName">Q[40:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[40:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/clock_in" type="array">
+      <obj_property name="ElementShortName">clock_in[40:0]</obj_property>
+      <obj_property name="ObjectShortName">clock_in[40:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/timeout" type="logic">
+      <obj_property name="ElementShortName">timeout</obj_property>
+      <obj_property name="ObjectShortName">timeout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/routeState" type="other">
+      <obj_property name="ElementShortName">routeState</obj_property>
+      <obj_property name="ObjectShortName">routeState</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/routingIn" type="other">
+      <obj_property name="ElementShortName">routingIn</obj_property>
+      <obj_property name="ObjectShortName">routingIn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/ne1_used" type="logic">
+      <obj_property name="ElementShortName">ne1_used</obj_property>
+      <obj_property name="ObjectShortName">ne1_used</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/ne8_used" type="logic">
+      <obj_property name="ElementShortName">ne8_used</obj_property>
+      <obj_property name="ObjectShortName">ne8_used</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/ne1_state" type="other">
+      <obj_property name="ElementShortName">ne1_state</obj_property>
+      <obj_property name="ObjectShortName">ne1_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/ne1_lock" type="other">
+      <obj_property name="ElementShortName">ne1_lock</obj_property>
+      <obj_property name="ObjectShortName">ne1_lock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/ne8_state" type="other">
+      <obj_property name="ElementShortName">ne8_state</obj_property>
+      <obj_property name="ObjectShortName">ne8_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/ne8_lock" type="other">
+      <obj_property name="ElementShortName">ne8_lock</obj_property>
+      <obj_property name="ObjectShortName">ne8_lock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/Sw04_position" type="other">
+      <obj_property name="ElementShortName">Sw04_position</obj_property>
+      <obj_property name="ObjectShortName">Sw04_position</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/Sw04_lock" type="other">
+      <obj_property name="ElementShortName">Sw04_lock</obj_property>
+      <obj_property name="ObjectShortName">Sw04_lock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/Sw12_position" type="other">
+      <obj_property name="ElementShortName">Sw12_position</obj_property>
+      <obj_property name="ObjectShortName">Sw12_position</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/Sw12_lock" type="other">
+      <obj_property name="ElementShortName">Sw12_lock</obj_property>
+      <obj_property name="ObjectShortName">Sw12_lock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/S22_aspectIn" type="other">
+      <obj_property name="ElementShortName">S22_aspectIn</obj_property>
+      <obj_property name="ObjectShortName">S22_aspectIn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/S22_lock" type="other">
+      <obj_property name="ElementShortName">S22_lock</obj_property>
+      <obj_property name="ObjectShortName">S22_lock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/S32_aspectIn" type="other">
+      <obj_property name="ElementShortName">S32_aspectIn</obj_property>
+      <obj_property name="ObjectShortName">S32_aspectIn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/global/system_i/interlocking_i/network_i/route_R11/S32_lock" type="other">
+      <obj_property name="ElementShortName">S32_lock</obj_property>
+      <obj_property name="ObjectShortName">S32_lock</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,634 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.1 (win64) Build 5094488 Fri Jun 14 08:59:21 MDT 2024
+| Date         : Thu Jul 25 19:50:46 2024
+| Host         : Kaltakar running 64-bit major release  (build 9200)
+| Command      : report_drc -file global_drc_routed.rpt -pb global_drc_routed.pb -rpx global_drc_routed.rpx
+| Design       : global
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 118
++----------+----------+---------------------+------------+
+| Rule     | Severity | Description         | Violations |
++----------+----------+---------------------+------------+
+| PDRC-153 | Warning  | Gated clock check   | 116        |
+| PLCK-12  | Warning  | Clock Placer Checks | 1          |
+| ZPS7-1   | Warning  | PS7 block required  | 1          |
++----------+----------+---------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/levelCrossing_Lc06/correspondenceState_reg[0]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/levelCrossing_Lc06/correspondenceState_reg[0]/L3_2/O, cell system_i/interlocking_i/network_A/levelCrossing_Lc06/correspondenceState_reg[0]/L3_2 (in system_i/interlocking_i/network_A/levelCrossing_Lc06/correspondenceState_reg[0] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/levelCrossing_Lc06/correspondenceState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/levelCrossing_Lc06/correspondenceState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/levelCrossing_Lc06/correspondenceState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/levelCrossing_Lc06/correspondenceState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/levelCrossing_Lc06/gen[15].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/levelCrossing_Lc06/gen[15].inst/timeout_reg_i_1__0/O, cell system_i/interlocking_i/network_A/levelCrossing_Lc06/gen[15].inst/timeout_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/levelCrossing_Lc06/restart_reg/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/levelCrossing_Lc06/restart_reg/L3_2/O, cell system_i/interlocking_i/network_A/levelCrossing_Lc06/restart_reg/L3_2 (in system_i/interlocking_i/network_A/levelCrossing_Lc06/restart_reg macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/levelCrossing_Lc08/correspondenceState_reg[0]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/levelCrossing_Lc08/correspondenceState_reg[0]/L3_2/O, cell system_i/interlocking_i/network_A/levelCrossing_Lc08/correspondenceState_reg[0]/L3_2 (in system_i/interlocking_i/network_A/levelCrossing_Lc08/correspondenceState_reg[0] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/levelCrossing_Lc08/correspondenceState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/levelCrossing_Lc08/correspondenceState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/levelCrossing_Lc08/correspondenceState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/levelCrossing_Lc08/correspondenceState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/levelCrossing_Lc08/gen[15].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/levelCrossing_Lc08/gen[15].inst/timeout_reg_i_1/O, cell system_i/interlocking_i/network_A/levelCrossing_Lc08/gen[15].inst/timeout_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/levelCrossing_Lc08/restart_reg/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/levelCrossing_Lc08/restart_reg/L3_2/O, cell system_i/interlocking_i/network_A/levelCrossing_Lc08/restart_reg/L3_2 (in system_i/interlocking_i/network_A/levelCrossing_Lc08/restart_reg macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/node_ne1/commandState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/node_ne1/commandState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/node_ne1/commandState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/node_ne1/commandState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/node_ne12/commandState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/node_ne12/commandState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/node_ne12/commandState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/node_ne12/commandState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/node_ne13/commandState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/node_ne13/commandState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/node_ne13/commandState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/node_ne13/commandState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/node_ne14/commandState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/node_ne14/commandState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/node_ne14/commandState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/node_ne14/commandState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/node_ne15/commandState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/node_ne15/commandState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/node_ne15/commandState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/node_ne15/commandState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/node_ne2/commandState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/node_ne2/commandState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/node_ne2/commandState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/node_ne2/commandState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/node_ne22/commandState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/node_ne22/commandState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/node_ne22/commandState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/node_ne22/commandState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/node_ne23/commandState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/node_ne23/commandState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/node_ne23/commandState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/node_ne23/commandState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/node_ne24/commandState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/node_ne24/commandState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/node_ne24/commandState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/node_ne24/commandState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/node_ne8/commandState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/node_ne8/commandState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/node_ne8/commandState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/node_ne8/commandState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/node_ne9/commandState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/node_ne9/commandState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/node_ne9/commandState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/node_ne9/commandState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/railwaySignal_C21/correspondenceState0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/railwaySignal_C21/restart_reg_i_1__4/O, cell system_i/interlocking_i/network_A/railwaySignal_C21/restart_reg_i_1__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/railwaySignal_C21/correspondenceState0_0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/railwaySignal_C21/restart_reg_i_1__13/O, cell system_i/interlocking_i/network_A/railwaySignal_C21/restart_reg_i_1__13. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/railwaySignal_C25/correspondenceState0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/railwaySignal_C25/restart_reg_i_1__2/O, cell system_i/interlocking_i/network_A/railwaySignal_C25/restart_reg_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/railwaySignal_C25/correspondenceState0_0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/railwaySignal_C25/restart_reg_i_1__14/O, cell system_i/interlocking_i/network_A/railwaySignal_C25/restart_reg_i_1__14. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/railwaySignal_C29/correspondenceState0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/railwaySignal_C29/restart_reg_i_1__10/O, cell system_i/interlocking_i/network_A/railwaySignal_C29/restart_reg_i_1__10. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/railwaySignal_L07/correspondenceState0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/railwaySignal_L07/restart_reg_i_1__9/O, cell system_i/interlocking_i/network_A/railwaySignal_L07/restart_reg_i_1__9. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/railwaySignal_L07/correspondenceState0_0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/railwaySignal_L07/restart_reg_i_1__11/O, cell system_i/interlocking_i/network_A/railwaySignal_L07/restart_reg_i_1__11. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/railwaySignal_P20/correspondenceState0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/railwaySignal_P20/restart_reg_i_1__5/O, cell system_i/interlocking_i/network_A/railwaySignal_P20/restart_reg_i_1__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/railwaySignal_T03/correspondenceState0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/railwaySignal_T03/restart_reg_i_1__8/O, cell system_i/interlocking_i/network_A/railwaySignal_T03/restart_reg_i_1__8. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/railwaySignal_X16/correspondenceState0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/railwaySignal_X16/restart_reg_i_1__7/O, cell system_i/interlocking_i/network_A/railwaySignal_X16/restart_reg_i_1__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R1/E[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R1/commandState_reg[1]_i_1__11/O, cell system_i/interlocking_i/network_A/route_R1/commandState_reg[1]_i_1__11. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R1/Lc08_command_reg[1]_0[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R1/commandState_reg[1]_i_2/O, cell system_i/interlocking_i/network_A/route_R1/commandState_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R1/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R1/gen[28].inst/timeout_reg_i_1__6/O, cell system_i/interlocking_i/network_A/route_R1/gen[28].inst/timeout_reg_i_1__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R10/E[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R10/commandState_reg[1]_i_2__16/O, cell system_i/interlocking_i/network_A/route_R10/commandState_reg[1]_i_2__16. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R10/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R10/gen[28].inst/timeout_reg_i_1__15/O, cell system_i/interlocking_i/network_A/route_R10/gen[28].inst/timeout_reg_i_1__15. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R11/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R11/gen[28].inst/timeout_reg_i_1__16/O, cell system_i/interlocking_i/network_A/route_R11/gen[28].inst/timeout_reg_i_1__16. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R12/E[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R12/commandState_reg[1]_i_1__8/O, cell system_i/interlocking_i/network_A/route_R12/commandState_reg[1]_i_1__8. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R12/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R12/gen[28].inst/timeout_reg_i_1__17/O, cell system_i/interlocking_i/network_A/route_R12/gen[28].inst/timeout_reg_i_1__17. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R13/E[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R13/commandState_reg[1]_i_1__5/O, cell system_i/interlocking_i/network_A/route_R13/commandState_reg[1]_i_1__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#39 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R13/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R13/gen[28].inst/timeout_reg_i_1__18/O, cell system_i/interlocking_i/network_A/route_R13/gen[28].inst/timeout_reg_i_1__18. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#40 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R14/E[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R14/commandState_reg[1]_i_1__6/O, cell system_i/interlocking_i/network_A/route_R14/commandState_reg[1]_i_1__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#41 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R14/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R14/gen[28].inst/timeout_reg_i_1__19/O, cell system_i/interlocking_i/network_A/route_R14/gen[28].inst/timeout_reg_i_1__19. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#42 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R15/E[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R15/positionStateOut_reg[1]_i_2__3/O, cell system_i/interlocking_i/network_A/route_R15/positionStateOut_reg[1]_i_2__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#43 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R15/Sw06_command_reg[1]_0[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R15/commandState_reg[1]_i_2__4/O, cell system_i/interlocking_i/network_A/route_R15/commandState_reg[1]_i_2__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#44 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R15/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R15/gen[28].inst/timeout_reg_i_1__20/O, cell system_i/interlocking_i/network_A/route_R15/gen[28].inst/timeout_reg_i_1__20. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#45 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R16/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R16/gen[28].inst/timeout_reg_i_1__21/O, cell system_i/interlocking_i/network_A/route_R16/gen[28].inst/timeout_reg_i_1__21. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#46 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R17/E[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R17/commandState_reg[1]_i_2__3/O, cell system_i/interlocking_i/network_A/route_R17/commandState_reg[1]_i_2__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#47 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R17/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R17/gen[28].inst/timeout_reg_i_1__22/O, cell system_i/interlocking_i/network_A/route_R17/gen[28].inst/timeout_reg_i_1__22. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#48 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R18/E[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R18/correspondenceState_reg[1]_i_2__7/O, cell system_i/interlocking_i/network_A/route_R18/correspondenceState_reg[1]_i_2__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#49 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R18/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R18/gen[28].inst/timeout_reg_i_1__23/O, cell system_i/interlocking_i/network_A/route_R18/gen[28].inst/timeout_reg_i_1__23. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#50 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R19/E[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R19/commandState_reg[1]_i_1__7/O, cell system_i/interlocking_i/network_A/route_R19/commandState_reg[1]_i_1__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#51 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R19/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R19/gen[28].inst/timeout_reg_i_1__24/O, cell system_i/interlocking_i/network_A/route_R19/gen[28].inst/timeout_reg_i_1__24. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#52 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R19/ne24_command_reg[1]_0[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R19/commandState_reg[1]_i_1__15/O, cell system_i/interlocking_i/network_A/route_R19/commandState_reg[1]_i_1__15. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#53 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R2/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R2/gen[28].inst/timeout_reg_i_1__7/O, cell system_i/interlocking_i/network_A/route_R2/gen[28].inst/timeout_reg_i_1__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#54 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R20/E[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R20/commandState_reg[1]_i_1__9/O, cell system_i/interlocking_i/network_A/route_R20/commandState_reg[1]_i_1__9. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#55 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R20/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R20/gen[28].inst/timeout_reg_i_1__25/O, cell system_i/interlocking_i/network_A/route_R20/gen[28].inst/timeout_reg_i_1__25. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#56 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R21/E[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R21/commandState_reg[1]_i_2__2/O, cell system_i/interlocking_i/network_A/route_R21/commandState_reg[1]_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#57 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R21/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R21/gen[28].inst/timeout_reg_i_1__26/O, cell system_i/interlocking_i/network_A/route_R21/gen[28].inst/timeout_reg_i_1__26. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#58 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R3/E[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R3/commandState_reg[1]_i_1__12/O, cell system_i/interlocking_i/network_A/route_R3/commandState_reg[1]_i_1__12. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#59 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R3/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R3/gen[28].inst/timeout_reg_i_1__8/O, cell system_i/interlocking_i/network_A/route_R3/gen[28].inst/timeout_reg_i_1__8. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#60 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R4/E[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R4/commandState_reg[1]_i_1__13/O, cell system_i/interlocking_i/network_A/route_R4/commandState_reg[1]_i_1__13. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#61 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R4/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R4/gen[28].inst/timeout_reg_i_1__9/O, cell system_i/interlocking_i/network_A/route_R4/gen[28].inst/timeout_reg_i_1__9. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#62 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R5/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R5/gen[28].inst/timeout_reg_i_1__10/O, cell system_i/interlocking_i/network_A/route_R5/gen[28].inst/timeout_reg_i_1__10. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#63 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R6/E[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R6/commandState_reg[1]_i_1__14/O, cell system_i/interlocking_i/network_A/route_R6/commandState_reg[1]_i_1__14. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#64 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R6/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R6/gen[28].inst/timeout_reg_i_1__11/O, cell system_i/interlocking_i/network_A/route_R6/gen[28].inst/timeout_reg_i_1__11. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#65 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R7/E[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R7/commandState_reg[1]_i_2__0/O, cell system_i/interlocking_i/network_A/route_R7/commandState_reg[1]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#66 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R7/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R7/gen[28].inst/timeout_reg_i_1__12/O, cell system_i/interlocking_i/network_A/route_R7/gen[28].inst/timeout_reg_i_1__12. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#67 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R7/ne14_command_reg[1]_0[0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R7/commandState_reg[1]_i_1__10/O, cell system_i/interlocking_i/network_A/route_R7/commandState_reg[1]_i_1__10. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#68 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R8/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R8/gen[28].inst/timeout_reg_i_1__13/O, cell system_i/interlocking_i/network_A/route_R8/gen[28].inst/timeout_reg_i_1__13. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#69 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/route_R9/gen[28].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/route_R9/gen[28].inst/timeout_reg_i_1__14/O, cell system_i/interlocking_i/network_A/route_R9/gen[28].inst/timeout_reg_i_1__14. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#70 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw04/correspondenceState0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw04/restart_reg_i_1__1/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw04/restart_reg_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#71 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw04/correspondenceState_reg[0]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw04/correspondenceState_reg[0]/L3_2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw04/correspondenceState_reg[0]/L3_2 (in system_i/interlocking_i/network_A/singleSwitch_Sw04/correspondenceState_reg[0] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#72 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw04/correspondenceState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw04/correspondenceState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw04/correspondenceState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/singleSwitch_Sw04/correspondenceState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#73 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw04/gen[15].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw04/gen[15].inst/timeout_reg_i_1__1/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw04/gen[15].inst/timeout_reg_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#74 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw04/positionStateOut_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw04/positionStateOut_reg[1]_i_2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw04/positionStateOut_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#75 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw04/restart_reg/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw04/restart_reg/L3_2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw04/restart_reg/L3_2 (in system_i/interlocking_i/network_A/singleSwitch_Sw04/restart_reg macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#76 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw06/commandState_reg[1]_i_2__1_n_0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw06/commandState_reg[1]_i_2__1/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw06/commandState_reg[1]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#77 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw06/correspondenceState0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw06/restart_reg_i_1__0/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw06/restart_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#78 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw06/correspondenceState0_0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw06/restart_reg_i_1__3/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw06/restart_reg_i_1__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#79 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw06/correspondenceState0_1 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw06/restart_reg_i_1__6/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw06/restart_reg_i_1__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#80 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw06/correspondenceState_reg[0]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw06/correspondenceState_reg[0]/L3_2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw06/correspondenceState_reg[0]/L3_2 (in system_i/interlocking_i/network_A/singleSwitch_Sw06/correspondenceState_reg[0] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#81 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw06/correspondenceState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw06/correspondenceState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw06/correspondenceState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/singleSwitch_Sw06/correspondenceState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#82 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw06/gen[15].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw06/gen[15].inst/timeout_reg_i_1__2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw06/gen[15].inst/timeout_reg_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#83 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw06/positionStateOut_reg[1]_i_2__0_n_0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw06/positionStateOut_reg[1]_i_2__0/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw06/positionStateOut_reg[1]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#84 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw06/restart_reg/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw06/restart_reg/L3_2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw06/restart_reg/L3_2 (in system_i/interlocking_i/network_A/singleSwitch_Sw06/restart_reg macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#85 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw07/correspondenceState0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw07/restart_reg_i_1/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw07/restart_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#86 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw07/correspondenceState_reg[0]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw07/correspondenceState_reg[0]/L3_2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw07/correspondenceState_reg[0]/L3_2 (in system_i/interlocking_i/network_A/singleSwitch_Sw07/correspondenceState_reg[0] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#87 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw07/correspondenceState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw07/correspondenceState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw07/correspondenceState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/singleSwitch_Sw07/correspondenceState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#88 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw07/gen[15].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw07/gen[15].inst/timeout_reg_i_1__4/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw07/gen[15].inst/timeout_reg_i_1__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#89 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw07/positionStateOut_reg[1]_i_2__2_n_0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw07/positionStateOut_reg[1]_i_2__2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw07/positionStateOut_reg[1]_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#90 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw07/restart_reg/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw07/restart_reg/L3_2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw07/restart_reg/L3_2 (in system_i/interlocking_i/network_A/singleSwitch_Sw07/restart_reg macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#91 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw12/correspondenceState_reg[0]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw12/correspondenceState_reg[0]/L3_2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw12/correspondenceState_reg[0]/L3_2 (in system_i/interlocking_i/network_A/singleSwitch_Sw12/correspondenceState_reg[0] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#92 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw12/correspondenceState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw12/correspondenceState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw12/correspondenceState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/singleSwitch_Sw12/correspondenceState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#93 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw12/gen[15].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw12/gen[15].inst/timeout_reg_i_1__3/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw12/gen[15].inst/timeout_reg_i_1__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#94 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw12/positionStateOut_reg[1]_i_2__1_n_0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw12/positionStateOut_reg[1]_i_2__1/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw12/positionStateOut_reg[1]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#95 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw12/restart_reg/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw12/restart_reg/L3_2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw12/restart_reg/L3_2 (in system_i/interlocking_i/network_A/singleSwitch_Sw12/restart_reg macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#96 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw13/correspondenceState_reg[0]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw13/correspondenceState_reg[0]/L3_2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw13/correspondenceState_reg[0]/L3_2 (in system_i/interlocking_i/network_A/singleSwitch_Sw13/correspondenceState_reg[0] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#97 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw13/correspondenceState_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw13/correspondenceState_reg[1]/L3_2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw13/correspondenceState_reg[1]/L3_2 (in system_i/interlocking_i/network_A/singleSwitch_Sw13/correspondenceState_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#98 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw13/gen[15].inst/timeout0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw13/gen[15].inst/timeout_reg_i_1__5/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw13/gen[15].inst/timeout_reg_i_1__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#99 Warning
+Gated clock check  
+Net system_i/interlocking_i/network_A/singleSwitch_Sw13/restart_reg/G0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/network_A/singleSwitch_Sw13/restart_reg/L3_2/O, cell system_i/interlocking_i/network_A/singleSwitch_Sw13/restart_reg/L3_2 (in system_i/interlocking_i/network_A/singleSwitch_Sw13/restart_reg macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#100 Warning
+Gated clock check  
+Net system_i/interlocking_i/splitter_i/correspondenceState0 is a gated clock net sourced by a combinational pin system_i/interlocking_i/splitter_i/restart_reg_i_1__12/O, cell system_i/interlocking_i/splitter_i/restart_reg_i_1__12. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#101 Warning
+Gated clock check  
+Net system_i/interlocking_i/splitter_i/packet_reg[32][0][0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_1__19/O, cell system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_1__19. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#102 Warning
+Gated clock check  
+Net system_i/interlocking_i/splitter_i/packet_reg[34][0][0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_1__20/O, cell system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_1__20. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#103 Warning
+Gated clock check  
+Net system_i/interlocking_i/splitter_i/packet_reg[36][0][0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_2/O, cell system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#104 Warning
+Gated clock check  
+Net system_i/interlocking_i/splitter_i/packet_reg[37][0][0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_2__0/O, cell system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#105 Warning
+Gated clock check  
+Net system_i/interlocking_i/splitter_i/packet_reg[38][0][0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_2__1/O, cell system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#106 Warning
+Gated clock check  
+Net system_i/interlocking_i/splitter_i/packet_reg[39][0][0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_2__2/O, cell system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#107 Warning
+Gated clock check  
+Net system_i/interlocking_i/splitter_i/packet_reg[40][0][0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_1__10/O, cell system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_1__10. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#108 Warning
+Gated clock check  
+Net system_i/interlocking_i/splitter_i/packet_reg[42][0][0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_2__3/O, cell system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_2__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#109 Warning
+Gated clock check  
+Net system_i/interlocking_i/splitter_i/packet_reg[43][0][0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_1__12/O, cell system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_1__12. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#110 Warning
+Gated clock check  
+Net system_i/interlocking_i/splitter_i/packet_reg[45][0][0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_2__4/O, cell system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_2__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#111 Warning
+Gated clock check  
+Net system_i/interlocking_i/splitter_i/packet_reg[46][0][0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_2__5/O, cell system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_2__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#112 Warning
+Gated clock check  
+Net system_i/interlocking_i/splitter_i/packet_reg[47][0][0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_1__15/O, cell system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_1__15. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#113 Warning
+Gated clock check  
+Net system_i/interlocking_i/splitter_i/packet_reg[49][0][0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_2__6/O, cell system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_2__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#114 Warning
+Gated clock check  
+Net system_i/interlocking_i/splitter_i/packet_reg[50][0][0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_1__21/O, cell system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_1__21. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#115 Warning
+Gated clock check  
+Net system_i/interlocking_i/splitter_i/packet_reg[54][0][0] is a gated clock net sourced by a combinational pin system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_1__18/O, cell system_i/interlocking_i/splitter_i/correspondenceState_reg[1]_i_1__18. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#116 Warning
+Gated clock check  
+Net system_i/printer_i/wr_uart_reg_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/printer_i/wr_uart_reg_i_1/O, cell system_i/printer_i/wr_uart_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	reset_IBUF_inst (IBUF.O) is locked to L19
+	reset_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+
